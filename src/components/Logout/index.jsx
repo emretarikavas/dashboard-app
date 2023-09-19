@@ -1,14 +1,11 @@
-import { useEffect } from "react";
 import "./logout.scss";
 import { useNavigate } from "react-router-dom";
 
 function Logout() {
   const navigate = useNavigate();
   function HandleLogout() {
-    useEffect(() => {
-      localStorage.removeItem("department");
-      navigate("/login");
-    }, []);
+    localStorage.removeItem("department");
+    navigate("/login");
   }
 
   return (

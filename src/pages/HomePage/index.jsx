@@ -1,5 +1,6 @@
 // HomePage.jsx
 
+import Button from "src/components/Button";
 import Logout from "src/components/Logout";
 
 /* import { useEffect, useState } from "react";
@@ -26,6 +27,7 @@ function HomePage() {
       ))} */}
       HomePage
       <Logout />
+      <Button>Giriş Yap</Button>
     </div>
   );
 }
