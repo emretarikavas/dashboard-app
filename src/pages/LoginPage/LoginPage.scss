@@ -1,0 +1,7 @@
+.container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: calc(100% - 10px);
+  margin-inline: auto;
+}

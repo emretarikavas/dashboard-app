@@ -1,5 +1,5 @@
-function UsersPage() {
+function index() {
   return <div>UsersPage</div>;
 }
 
-export default UsersPage;
+export default index;

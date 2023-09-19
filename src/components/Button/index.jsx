@@ -1,8 +1,10 @@
 import "./button.scss";
 import cn from "classnames";
-function Button({ children, full }) {
+function Button({ children, full, onClick }) {
   return (
-    <button className={cn(full && "fullWidth", "button")}>{children}</button>
+    <button onClick={onClick} className={cn(full && "fullWidth", "button")}>
+      {children}
+    </button>
   );
 }
 
