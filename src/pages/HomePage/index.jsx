@@ -1,7 +1,7 @@
 // HomePage.jsx
 
-import Button from "src/components/Button";
 import Logout from "src/components/Logout";
+import Input from "src/components/Input";
 
 /* import { useEffect, useState } from "react";
 import { billingData } from "src/data/index"; */
@@ -27,7 +27,7 @@ function HomePage() {
       ))} */}
       HomePage
       <Logout />
-      <Button>Giriş Yap</Button>
+      <Input type="password" />
     </div>
   );
 }
