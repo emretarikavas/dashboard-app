@@ -4,13 +4,12 @@ import BillingsPage from "src/pages/BillingsPage";
 import HomePage from "src/pages/HomePage";
 import LoginPage from "src/pages/LoginPage";
 import UsersPage from "src/pages/UsersPage";
-import MainLayout from "src/layouts/MainLayout";
-import RootPage from "src/pages/RootPage";
+import ProtectedRoute from "src/layouts/ProtectedRoute";
 
 const routes = createBrowserRouter([
   {
     path: "/",
-    element: <MainLayout />,
+    element: <ProtectedRoute />,
     children: [
       {
         element: <HomePage />,
@@ -29,10 +28,6 @@ const routes = createBrowserRouter([
   {
     path: "/login",
     element: <LoginPage />
-  },
-  {
-    path: "*",
-    element: <RootPage />
   }
 ]);
 

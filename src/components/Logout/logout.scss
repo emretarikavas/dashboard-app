@@ -1,0 +1,38 @@
+.Btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+  position: relative;
+  transition-duration: 0.3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: $svg-box;
+
+  &:hover {
+    border-radius: 5px;
+    transition-duration: 0.3s;
+  }
+
+  &:hover .sign {
+    transition-duration: 0.3s;
+  }
+  &:active {
+    transform: translate(2px, 2px);
+  }
+
+  .sign {
+    width: 100%;
+    transition-duration: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  svg {
+    width: 18px;
+  }
+  path {
+    fill: $light;
+  }
+}
