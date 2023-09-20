@@ -13,13 +13,17 @@
     background-color: $box-bg2;
     border-radius: 4px;
     box-shadow: $shadow;
-    transform: translate(0, 20px);
+    transform: translate(0, 0);
+
     transition: all 0.5s ease-in;
+    visibility: hidden;
+    opacity: 0;
 
-    &:active {
+    &.open {
       transform: translate(0, 20px);
+      visibility: visible;
+      opacity: 1;
     }
-
     &:before {
       content: "";
       position: absolute;

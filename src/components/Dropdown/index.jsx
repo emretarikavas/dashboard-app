@@ -10,15 +10,15 @@ export default function index() {
         Filter
       </button>
 
-      {open && (
-        <ul className="dropdown">
+      {
+        <ul className={`dropdown ${open ? "open" : ""}`}>
           {Filter.map((item, key) => (
             <li className="dropdownItem" key={key}>
               {item}
             </li>
           ))}
         </ul>
-      )}
+      }
     </div>
   );
 }
