@@ -3,9 +3,8 @@
 [x] //FIXME : Vercel bugfix
 [x] //FIXME : Login Pagede boşluğu biraz arttır
 
-[]: //TODO: Navbar yap
+[x]: //TODO: Navbar yap
 []: //TODO: Sidebar yap
 
-[] //TODO : Renk paletini tekrardan düzenle
+[x] //TODO : Renk paletini tekrardan düzenle
 [] //TODO : Billing apisini tekrardan yazdır
-[] //TODO : Headless UI paketini kullan

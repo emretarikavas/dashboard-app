@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./dropdown.scss";
+import DropdownIcon from "../Icons/DropdownIcon";
 
 export default function index() {
   const [open, setOpen] = useState(false);
@@ -7,7 +8,7 @@ export default function index() {
   return (
     <div className="dropdownContainer">
       <button onClick={() => setOpen(!open)} className="Btn dropdownButton">
-        Filter
+        <DropdownIcon />
       </button>
 
       {
