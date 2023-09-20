@@ -30,7 +30,7 @@ const index = () => {
   };
 
   return (
-    <div className="loginBox">
+    <form className="loginBox">
       <div className="input-container">
         <Label>Email</Label>
         <Input
@@ -49,10 +49,10 @@ const index = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
       </div>
-      <Button onClick={handleLogin} full>
+      <Button onSubmit={handleLogin} full type="submit">
         Giriş Yap
       </Button>
-    </div>
+    </form>
   );
 };
 
