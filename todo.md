@@ -1,5 +1,5 @@
-[] //FIXME : Login Page de ki bugları düzelt ve ss aldığın görsellere göre tekrardan ufak bir tasarlama yap
-[] //FIXME : Login Pagede otomatik tamamlamada inputların bg si beyaza dönüyor
+[x] //FIXME : Login Page de ki bugları düzelt ve ss aldığın görsellere göre tekrardan ufak bir tasarlama yap
+[x] //FIXME : Login Pagede otomatik tamamlamada inputların bg si beyaza dönüyor
 [] //FIXME : Vercel bugfix
 
 [] //TODO : Renk paletini tekrardan düzenle
