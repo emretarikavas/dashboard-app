@@ -1,12 +1,13 @@
 .button {
-  background-color: $button;
+  background-color: $primary-100;
   padding: 14px 36px;
   border-radius: 5px;
-  color: $light;
+  color: $text-white;
   font-size: 18px;
-  
+  transition: all 0.3s ease-in;
+
   &:hover {
-    background-color: $button-hover;
+    background-color: $primary-200;
   }
 }
 

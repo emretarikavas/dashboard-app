@@ -2,7 +2,7 @@
   position: relative;
 
   .dropdownButton {
-    color: $light;
+    color: $text-white;
   }
   .dropdown {
     position: absolute;
@@ -10,7 +10,7 @@
     height: 150px;
     top: 40px;
     right: 30px;
-    background-color: $box-bg2;
+    background-color: $dark-box-bg;
     border-radius: 4px;
     box-shadow: $shadow;
     transform: translate(0, 0);

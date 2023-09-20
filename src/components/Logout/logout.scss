@@ -8,7 +8,7 @@
   position: relative;
   transition-duration: 0.3s;
   box-shadow: $shadow;
-  background-color: $svg-box;
+  background-color: $dark-box-bg;
 
   &:hover {
     border-radius: 5px;
@@ -33,6 +33,6 @@
     width: 18px;
   }
   path {
-    fill: $light;
+    fill: $text-white;
   }
 }

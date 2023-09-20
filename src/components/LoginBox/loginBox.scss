@@ -3,12 +3,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $box-bg;
+  background-color: $login-box-bg;
   width: 500px;
   gap: 30px;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 
   .img-container {
     img {
@@ -26,10 +26,11 @@
       letter-spacing: 1.5px;
       font-weight: bold;
       font-size: 24px;
+      color: $dark-text;
     }
     p {
       font-size: 12px;
-      color: $hover-nav;
+      color: $primary-100;
     }
   }
 
@@ -37,11 +38,11 @@
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: #161618;
+    background-color: $dark-input-bg;
     border-radius: 5px;
 
     svg {
-      color: $dark-bg;
+      color: $dark-main-bg;
       width: 20px;
       height: 20px;
       margin-inline: 10px;

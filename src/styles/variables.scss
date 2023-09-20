@@ -1,27 +1,24 @@
 //BG Colors
-$dark-bg: #1e1e20;
-$box-bg: #252528;
-$box-bg2: #312f2f;
-$svg-box: #2f2f34;
+/* $dark-bg: #1e1e20;
 
+
+ */
 //Text Colors
-$white: rgba(255, 255, 245, 0.86);
-$light: #f3f3f3;
-$dark-text: #757575;
+
+$theme-light: #f3f3f3;
 
 //Others
 $shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
 
-$button: #646cff;
-$button-hover: rgba(100, 108, 255, 0.8);
-$hover-nav: #9499ff;
-
-//Lama BG
-$main-bg: #2a3447;
-$soft-bg: #384256;
-$dark-bgg: #222b3c;
-
-//Lama Text
-$main-color: #fff;
-$soft-color: #ddd;
-$dark-color: #2a3447;
+/* New Colors */
+$text-white: rgba(255, 255, 245, 0.86);
+$primary-100: #646cff;
+$primary-200: #7b7bff;
+$primary-300: #8f8bff;
+$dark-main-bg: #1e1e20;
+$dark-box-bg: #333335;
+$login-box-bg: #28282d;
+$dark-300: #49494b;
+$dark-text: #d0d0d0;
+$dark-mixed-300: #6e69a1;
+$dark-input-bg: #19191c;
