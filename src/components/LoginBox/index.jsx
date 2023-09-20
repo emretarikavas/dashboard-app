@@ -25,6 +25,8 @@ const index = () => {
     );
     if (user) {
       localStorage.setItem("department", user.department);
+      localStorage.setItem("email", user.email);
+
       navigate("/");
     } else {
       /*  */

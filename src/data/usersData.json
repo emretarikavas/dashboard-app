@@ -2,7 +2,7 @@
   {
     "id": 1,
     "first_name": "Anıl",
-    "last_first_name": "Yılmaz",
+    "last_name": "Yılmaz",
     "email": "anil@example.com",
     "password": "123123",
     "department": "IT"
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "first_name": "Tarık",
-    "last_first_name": "Kara",
+    "last_name": "Kara",
     "email": "tarik@example.com",
     "password": "147741",
     "department": "Finans"
@@ -18,7 +18,7 @@
   {
     "id": 3,
     "first_name": "Elif",
-    "last_first_name": "Yılmaz",
+    "last_name": "Yılmaz",
     "email": "elif@example.com",
     "password": "123123",
     "department": "Pazarlama"
@@ -26,7 +26,7 @@
   {
     "id": 4,
     "first_name": "Eren",
-    "last_first_name": "Demir",
+    "last_name": "Demir",
     "email": "eren@example.com",
     "password": "123123",
     "department": "Üretim"
@@ -34,7 +34,7 @@
   {
     "id": 5,
     "first_name": "Selin",
-    "last_first_name": "Özdemir",
+    "last_name": "Özdemir",
     "email": "selin@example.com",
     "password": "123123",
     "department": "Satış"
@@ -42,7 +42,7 @@
   {
     "id": 6,
     "first_name": "Mert",
-    "last_first_name": "Koç",
+    "last_name": "Koç",
     "email": "mert@example.com",
     "password": "123123",
     "department": "IT"
@@ -50,7 +50,7 @@
   {
     "id": 7,
     "first_name": "Aylin",
-    "last_first_name": "Kara",
+    "last_name": "Kara",
     "email": "aylin@example.com",
     "password": "123123",
     "department": "Finans"
@@ -58,7 +58,7 @@
   {
     "id": 8,
     "first_name": "Ahmet",
-    "last_first_name": "Yılmaz",
+    "last_name": "Yılmaz",
     "email": "ahmet@example.com",
     "password": "123123",
     "department": "Üretim"
@@ -66,7 +66,7 @@
   {
     "id": 9,
     "first_name": "Deniz",
-    "last_first_name": "Koç",
+    "last_name": "Koç",
     "email": "deniz@example.com",
     "password": "123123",
     "department": "Pazarlama"
@@ -74,7 +74,7 @@
   {
     "id": 10,
     "first_name": "Gizem",
-    "last_first_name": "Demir",
+    "last_name": "Demir",
     "email": "gizem@example.com",
     "password": "123123",
     "department": "Satış"
