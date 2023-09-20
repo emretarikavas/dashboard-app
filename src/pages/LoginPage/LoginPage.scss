@@ -2,6 +2,7 @@
   display: grid;
   place-items: center;
   height: 100vh;
-  width: calc(100% - 10px);
+  overflow: hidden;
+  width: calc(100% - 30px);
   margin-inline: auto;
 }
