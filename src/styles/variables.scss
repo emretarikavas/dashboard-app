@@ -1,20 +1,25 @@
-/* :root {
-  --dark-bg: #1e1e20;
-  --white: rgba(255, 255, 245, 0.86);
-  --box-bg: #252528;
-  --button: #646cff;
-  --hover-nav: #9499ff;
-  --svg-box: #1e1e20;
-}
- */
-
+//BG Colors
 $dark-bg: #1e1e20;
-$button: #646cff;
-$button-hover: rgba(100, 108, 255, 0.8);
-$white: rgba(255, 255, 245, 0.86);
 $box-bg: #252528;
 $box-bg2: #171717;
-$hover-nav: #9499ff;
 $svg-box: #1e1e20;
+
+//Text Colors
+$white: rgba(255, 255, 245, 0.86);
 $light: #f3f3f3;
 $dark-text: #757575;
+
+$button: #646cff;
+$button-hover: rgba(100, 108, 255, 0.8);
+$hover-nav: #9499ff;
+/* 
+//Lama BG
+$main-bg: #2a3447;
+$soft-bg: #384256;
+$dark-bgg: #222b3c;
+
+//Lama Text
+$main-color: #fff;
+$soft-color: #ddd;
+$dark-color: #2a3447;
+ */

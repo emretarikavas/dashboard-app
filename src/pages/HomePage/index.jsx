@@ -3,13 +3,15 @@
 import Logout from "src/components/Logout";
 
 import { useEffect, useState } from "react";
-import { billingData } from "src/data/index";
+import { useFakeData } from "src/context/useFakeData";
 function HomePage() {
   const [relevantBills, setRelevantBills] = useState([]);
 
+  const { billing } = useFakeData();
+
   useEffect(() => {
     const department = localStorage.getItem("department");
-    const filteredBills = billingData.filter(
+    const filteredBills = billing.filter(
       (bill) => bill.department === department
     );
     setRelevantBills(filteredBills);
@@ -32,6 +34,7 @@ function HomePage() {
       {relevantBills.map((bill) => (
         <div key={bill.id}>
           <h2>{bill.company}</h2>
+          <p>{bill.date}</p>
           <p>{bill.amount}</p>
           <p>{bill.status}</p>
         </div>
