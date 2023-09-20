@@ -1,10 +1,9 @@
 import "./button.scss";
 import cn from "classnames";
-function Button({ children, full, onSubmit, onClick, type }) {
+function Button({ children, full, onClick, type }) {
   return (
     <button
       onClick={onClick}
-      onSubmit={onSubmit}
       type={type}
       className={cn(full && "fullWidth", "button")}
     >

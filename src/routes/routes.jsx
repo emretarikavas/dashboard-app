@@ -20,13 +20,13 @@ const routes = createBrowserRouter([
         element: <UsersPage />
       },
       {
-        path: "/billings",
+        path: "billings",
         element: <BillingsPage />
       }
     ]
   },
   {
-    path: "/login",
+    path: "login",
     element: <LoginPage />
   }
 ]);

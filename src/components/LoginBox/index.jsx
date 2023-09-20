@@ -1,10 +1,12 @@
 import Button from "../Button";
 import Input from "../Input";
-import Label from "../Label";
 import "./loginBox.scss";
+import { FaUser } from "react-icons/fa";
+import { RiLockPasswordFill } from "react-icons/ri";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { usersData } from "src/data/index";
+import dashboardImg from "src/assets/engineering_team.svg";
 const index = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -30,10 +32,20 @@ const index = () => {
   };
 
   return (
-    <form className="loginBox">
+    <form onSubmit={handleLogin} className="loginBox">
+      <div className="img-container">
+        <img src={dashboardImg} alt="" />
+        <div className="title">
+          <h2>GİRİŞ YAP</h2>
+          <p>
+            Hoşgeldiniz. Giriş yapmak için lütfen gerekli alanları doldurunuz...
+          </p>
+        </div>
+      </div>
       <div className="input-container">
-        <Label>Email</Label>
+        <FaUser />
         <Input
+          placeholder="E-Posta"
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -41,15 +53,16 @@ const index = () => {
         />
       </div>
       <div className="input-container">
-        <Label>Şifre</Label>
+        <RiLockPasswordFill />
         <Input
+          placeholder="Parola"
           full
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
       </div>
-      <Button onSubmit={handleLogin} full type="submit">
+      <Button full type="submit">
         Giriş Yap
       </Button>
     </form>
