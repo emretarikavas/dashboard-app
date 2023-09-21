@@ -6,6 +6,7 @@ function MainLayout() {
   return (
     <>
       <Navbar />
+      <Sidebar />
       <Outlet />
     </>
   );

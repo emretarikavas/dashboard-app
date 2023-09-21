@@ -1,13 +1,4 @@
-
-//Text Colors
-
-$theme-light: #f3f3f3;
-
-//Others
-$shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
-
-/* New Colors */
-$text-white: rgba(255, 255, 245, 0.86);
+// BG Colors
 $primary-100: #646cff;
 $primary-200: #7b7bff;
 $primary-300: #8f8bff;
@@ -15,7 +6,15 @@ $dark-main-bg: #1e1e20;
 $dark-box-bg: #333335;
 $login-box-bg: #28282d;
 $dark-300: #49494b;
-$dark-text: #d0d0d0;
-$text-hover: #ba9ffb;
 $dark-mixed-300: #6e69a1;
 $dark-input-bg: #19191c;
+
+//Text Colors
+$text-white: rgba(255, 255, 245, 0.86);
+$dark-text: #d0d0d0;
+$text-hover: #ba9ffb;
+
+$theme-light: #f3f3f3;
+
+//Others
+$shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
