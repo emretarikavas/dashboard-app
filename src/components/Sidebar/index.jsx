@@ -22,20 +22,29 @@ const sideBarData = [
   {
     id: 2,
     to: "/users",
-    icon: <HiUsers />,
-    iconActive: <HiOutlineUsers />,
-    text: "Ana Sayfa"
+    icon: <HiOutlineUsers />,
+    iconActive: <HiUsers />,
+    text: "Kullanıcılar"
   }
 ];
 
 function index() {
-  return sideBarData.map((data) => {
-    <div key={data.id}>
-      <NavLink to={data.to}>
-        <span>{data.text}</span>
-      </NavLink>
-    </div>;
-  });
+  const [activeLink, setActiveLink] = useState("/");
+
+  return (
+    <aside className="sidebar">
+      {sideBarData.map((data) => (
+        <NavLink
+          className="sidebarItem"
+          to={data.to}
+          onClick={() => setActiveLink(data.to)}
+        >
+          {activeLink === data.to ? data.iconActive : data.icon}
+          <span>{data.text}</span>
+        </NavLink>
+      ))}
+    </aside>
+  );
 }
 
 export default index;
