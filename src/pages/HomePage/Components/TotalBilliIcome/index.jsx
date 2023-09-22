@@ -1,10 +1,7 @@
-// src/pages/HomePage/Components/TotalBilliIcome/index.jsx
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { useFakeData } from "src/context/useFakeData";
 import "./totalbillIncome.scss";
 
-const index = ({ days }) => {
+const index = () => {
   return (
     <div>
       <h2>Toplam Gelir Fatura Sayısı</h2>
