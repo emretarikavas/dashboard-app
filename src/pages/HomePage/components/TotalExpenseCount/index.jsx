@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-import "./totalBillExpense.scss";
+import "./totalexpensecount.scss";
 import { billingData } from "src/data";
 const index = () => {
   const [totalExpenseBills, setTotalExpenseBills] = useState(0);
