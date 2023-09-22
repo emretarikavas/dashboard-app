@@ -1,8 +1,6 @@
 import "./navProfile.scss";
-import { useFakeData } from "src/context/useFakeData";
 
 function Index() {
-  const { users } = useFakeData();
   const loggedInUserEmail = localStorage.getItem("email");
 
   const loggedInUser = users.find((user) => user.email === loggedInUserEmail);
