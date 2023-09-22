@@ -1,9 +1,12 @@
 import "./navProfile.scss";
+import { usersData } from "src/data/index";
 
 function Index() {
   const loggedInUserEmail = localStorage.getItem("email");
 
-  const loggedInUser = users.find((user) => user.email === loggedInUserEmail);
+  const loggedInUser = usersData.find(
+    (user) => user.email === loggedInUserEmail
+  );
 
   if (loggedInUser) {
     const name = `${loggedInUser.first_name}+${loggedInUser.last_name}`;
