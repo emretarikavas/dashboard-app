@@ -1,5 +1,5 @@
 // LoginPage.jsx
-import LoginBox from "src/components/LoginBox";
+import LoginBox from "./components/LoginBox";
 import "./LoginPage.scss";
 
 function LoginPage() {

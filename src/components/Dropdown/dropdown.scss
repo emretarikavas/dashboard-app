@@ -9,9 +9,13 @@
     }
   }
   .dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     position: absolute;
     width: 180px;
-    height: 180px;
+    height: 160px;
     top: 40px;
     right: 25px;
     background-color: $dark-box-bg;
@@ -44,6 +48,7 @@
       mix-blend-mode: multiple;
     }
     .dropdownItem {
+      flex: 1;
       display: flex;
       align-items: center;
       justify-content: center;

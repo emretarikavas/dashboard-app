@@ -1,7 +1,5 @@
-import axios from "axios";
 import "./navProfile.scss";
 import { useFakeData } from "src/context/useFakeData";
-import { useEffect, useState } from "react";
 
 function Index() {
   const { users } = useFakeData();

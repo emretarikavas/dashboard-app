@@ -1,5 +1,5 @@
-import Button from "../Button";
-import Input from "../Input";
+import Button from "../../../../components/Button";
+import Input from "../../../../components/Input";
 import "./loginBox.scss";
 import { FaUser } from "react-icons/fa";
 import { RiLockPasswordFill } from "react-icons/ri";
