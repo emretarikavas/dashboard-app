@@ -15,6 +15,6 @@
 [] //TODO: Her departmana ayrı veriler çıkart
 [] //TODO : Sidebar mobile geçtiğinde sadece iconlar gözüksün
 
-billingData.json dosyasındaki sadece gelir bilgisi içeren dataların toplamını totalBillingIncome classname i olan h3 e yazsın
+useFakeData contextindeki billing den sadece gelir bilgisi içeren dataların toplamını totalBillingIncome classname i olan h3 e yazsın
 
-benim Dropdown bileşenimdeki son 7 gün yazan yere tıkladığımda totalBillIncome bileşenimdeki h3 bilgisi son 7 gün içerisinde gelir bilgisi içeren tüm verilerin toplamını yazsın. aynı şeyleri son 30 gün için ve son 1 yıl içinde yapsın ve varsayılan olarak son 30 gün verisi dönsün
+benim Dropdown bileşenimdeki son 7 gün yazan yere tıkladığımda totalBillIncome bileşenimdeki h3 bilgisi son 7 gün içerisinde gelir bilgisi içeren tüm verilerin toplamını yazsın. aynı şeyleri son 30 gün için ve son 1 yıl içinde yapsın ve varsayılan olarak son 30 gün verisi dönsün ve bunu her yerde kullanabileceğim bir şekilde yap çünkü totalBillingIncome gibi başka bileşenleri de buna göre sıralamak istiyorum
