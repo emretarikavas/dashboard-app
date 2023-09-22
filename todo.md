@@ -9,7 +9,8 @@
 [x] //TODO : Renk paletini tekrardan düzenle
 [x] //TODO : Billing apisini tekrardan yazdır
 
-[] //TODO : HomePage genel grid yapısını oluştur
+[x] //TODO : HomePage genel grid yapısını oluştur
 [] //TODO: Genel Fonksiyonu yazdır
 [] //TODO : Bugün en kötü 2 veya 3 tane anasayfa componenti çıkart
+[] //TODO: Her departmana ayrı veriler çıkart
 [] //TODO : Sidebar mobile geçtiğinde sadece iconlar gözüksün
