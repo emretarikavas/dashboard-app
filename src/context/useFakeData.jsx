@@ -1,33 +1,14 @@
-// src/context/useFakeData.jsx
-import { createContext, useContext, useState, useEffect } from "react";
-import axios from "axios";
+import { createContext, useContext, useState } from "react";
+import { billingData, usersData } from "src/data";
 
 const FakeDataContext = createContext();
 
 export const FakeDataProvider = ({ children }) => {
-  const [billingData, setBillingData] = useState([]);
-  const [filteredData, setFilteredData] = useState([]);
-
-  useEffect(() => {
-    axios.get("/src/data/billingData.json").then((response) => {
-      setBillingData(response.data);
-    });
-  }, []);
-
-  const filterData = (days) => {
-    const now = Date.now();
-    const incomeBills = billingData.filter((bill) => {
-      const billDate = new Date(bill.date);
-      const differenceInDays = Math.floor(
-        (now - billDate) / (1000 * 60 * 60 * 24)
-      );
-      return bill.status === "Gelir" && differenceInDays <= days;
-    });
-    setFilteredData(incomeBills);
-  };
+  const [users] = useState(usersData);
+  const [billing] = useState(billingData);
 
   return (
-    <FakeDataContext.Provider value={{ billingData, filteredData, filterData }}>
+    <FakeDataContext.Provider value={{ users, billing }}>
       {children}
     </FakeDataContext.Provider>
   );
