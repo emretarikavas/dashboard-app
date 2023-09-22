@@ -1,6 +1,6 @@
 import "./homepage.scss";
-import TotalBillExpense from "./components/TotalBillExpense";
-import TotalBillIncome from "./components/TotalBillIncome";
+import TotalBillExpense from "src/pages/HomePage/components/TotalBillExpense";
+import TotalBillIncome from "src/pages/HomePage/components/TotalBillIncome";
 const index = () => {
   return (
     <div className="home">
