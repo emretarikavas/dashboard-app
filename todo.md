@@ -4,10 +4,12 @@
 [x] //FIXME : Login Pagede boşluğu biraz arttır
 
 [x]: //TODO: Navbar yap
-[]: //TODO: Sidebar yap
+[x]: //TODO: Sidebar yap
 
 [x] //TODO : Renk paletini tekrardan düzenle
-[] //TODO : Billing apisini tekrardan yazdır
+[x] //TODO : Billing apisini tekrardan yazdır
 
-HiOutlineHome HiHome HiUsers HiOutlineUsers
-IoReceiptOutline ,IoReceiptSharp
+[] //TODO : HomePage genel grid yapısını oluştur
+[] //TODO: Genel Fonksiyonu yazdır
+[] //TODO : Bugün en kötü 2 veya 3 tane anasayfa componenti çıkart
+[] //TODO : Sidebar mobile geçtiğinde sadece iconlar gözüksün

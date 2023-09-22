@@ -1,902 +1,2366 @@
 [
   {
     "id": 1,
-    "bill_no": "2024001",
-    "company": "ABC Şirketi",
-    "date": "2023-04-05",
-    "amount": 25000.0,
-    "status": "Ödendi",
-    "department": "Satış"
+    "bill_no": "FAT2023251",
+    "company": "ABC Ltd.",
+    "date": "22 08 2023",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 2,
-    "bill_no": "2024002",
-    "company": "XYZ Ltd.",
-    "date": "2023-03-20",
-    "amount": 35000.0,
-    "status": "Ödendi",
-    "department": "Pazarlama"
+    "bill_no": "FAT2023252",
+    "company": "XYZ Inc.",
+    "date": "18 08 2023",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gelir"
   },
   {
     "id": 3,
-    "bill_no": "2024003",
-    "company": "123 AŞ",
-    "date": "2023-04-25",
-    "amount": 58000.0,
-    "status": "Ödendi",
-    "department": "IT"
+    "bill_no": "FAT2023253",
+    "company": "123 Corp.",
+    "date": "15 08 2023",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 4,
-    "bill_no": "2024004",
-    "company": "DEF Holding",
-    "date": "2023-05-15",
-    "amount": 72000.0,
-    "status": "Ödendi",
-    "department": "Finans"
+    "bill_no": "FAT2023254",
+    "company": "TechPro Solutions",
+    "date": "10 08 2023",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 5,
-    "bill_no": "2024005",
-    "company": "GHI Ticaret",
-    "date": "2023-06-10",
-    "amount": 41000.0,
-    "status": "Ödendi",
-    "department": "Satış"
+    "bill_no": "FAT2023255",
+    "company": "InnoTech Corp.",
+    "date": "07 08 2023",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gelir"
   },
   {
     "id": 6,
-    "bill_no": "2024006",
-    "company": "LMN Şirketi",
-    "date": "2023-07-20",
-    "amount": 89000.0,
-    "status": "Ödendi",
-    "department": "Pazarlama"
+    "bill_no": "FAT2023256",
+    "company": "Data Systems Ltd.",
+    "date": "05 08 2023",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 7,
-    "bill_no": "2024007",
-    "company": "OPQ AŞ",
-    "date": "2023-08-12",
-    "amount": 65000.0,
-    "status": "Ödendi",
-    "department": "IT"
+    "bill_no": "FAT2023257",
+    "company": "GlobalTech Solutions",
+    "date": "02 08 2023",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 8,
-    "bill_no": "2024008",
-    "company": "RST Holding",
-    "date": "2023-09-05",
-    "amount": 48000.0,
-    "status": "Ödendi",
-    "department": "Finans"
+    "bill_no": "FAT2023258",
+    "company": "MegaCorp",
+    "date": "30 07 2023",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 9,
-    "bill_no": "2024009",
-    "company": "UVW Ticaret",
-    "date": "2023-10-15",
-    "amount": 78000.0,
-    "status": "Ödendi",
-    "department": "Satış"
+    "bill_no": "FAT2023259",
+    "company": "WebTech Solutions",
+    "date": "28 07 2023",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 10,
-    "bill_no": "2024010",
-    "company": "XYZ Ltd.",
-    "date": "2023-11-20",
-    "amount": 54000.0,
-    "status": "Ödendi",
-    "department": "Pazarlama"
+    "bill_no": "FAT2023260",
+    "company": "Swift Enterprises",
+    "date": "25 07 2023",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 11,
-    "bill_no": "2024011",
-    "company": "ABC Şirketi",
-    "date": "2023-12-05",
-    "amount": 75000.0,
-    "status": "Ödendi",
-    "department": "IT"
+    "bill_no": "FAT2023261",
+    "company": "TechPro Corp.",
+    "date": "22 07 2023",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 12,
-    "bill_no": "2024012",
-    "company": "DEF Holding",
-    "date": "2023-01-05",
-    "amount": 61000.0,
-    "status": "Ödendi",
-    "department": "Finans"
+    "bill_no": "FAT2023262",
+    "company": "Future Systems Ltd.",
+    "date": "20 07 2023",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 13,
-    "bill_no": "2024013",
-    "company": "GHI Ticaret",
-    "date": "2023-02-15",
-    "amount": 89000.0,
-    "status": "Ödendi",
-    "department": "Satış"
+    "bill_no": "FAT2023263",
+    "company": "Tech Solutions Inc.",
+    "date": "17 07 2023",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 14,
-    "bill_no": "2024014",
-    "company": "LMN Şirketi",
-    "date": "2023-03-10",
-    "amount": 98000.0,
-    "status": "Ödendi",
-    "department": "Pazarlama"
+    "bill_no": "FAT2023264",
+    "company": "MegaTech Corp.",
+    "date": "15 07 2023",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 15,
-    "bill_no": "2024015",
-    "company": "OPQ AŞ",
-    "date": "2023-04-05",
-    "amount": 87000.0,
-    "status": "Ödendi",
-    "department": "IT"
+    "bill_no": "FAT2023265",
+    "company": "WebTech Corp.",
+    "date": "12 07 2023",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 16,
-    "bill_no": "2024016",
-    "company": "RST Holding",
-    "date": "2023-05-20",
-    "amount": 72000.0,
-    "status": "Ödendi",
-    "department": "Finans"
+    "bill_no": "FAT2023266",
+    "company": "Swift Enterprises",
+    "date": "10 07 2023",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 17,
-    "bill_no": "2024017",
-    "company": "UVW Ticaret",
-    "date": "2023-06-15",
-    "amount": 89000.0,
-    "status": "Ödendi",
-    "department": "Satış"
+    "bill_no": "FAT2023267",
+    "company": "TechPro Corp.",
+    "date": "07 07 2023",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 18,
-    "bill_no": "2024018",
-    "company": "ABC Şirketi",
-    "date": "2023-07-12",
-    "amount": 48000.0,
-    "status": "Ödendi",
-    "department": "Pazarlama"
+    "bill_no": "FAT2023268",
+    "company": "Future Systems Ltd.",
+    "date": "05 07 2023",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 19,
-    "bill_no": "2024019",
-    "company": "XYZ Ltd.",
-    "date": "2023-08-18",
-    "amount": 74000.0,
-    "status": "Ödendi",
-    "department": "IT"
+    "bill_no": "FAT2023269",
+    "company": "Tech Solutions Inc.",
+    "date": "02 07 2023",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 20,
-    "bill_no": "2024020",
-    "company": "123 AŞ",
-    "date": "2023-09-25",
-    "amount": 81000.0,
-    "status": "Ödendi",
-    "department": "Finans"
+    "bill_no": "FAT2023270",
+    "company": "MegaTech Corp.",
+    "date": "30 06 2023",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 21,
-    "bill_no": "2024021",
-    "company": "DEF Holding",
-    "date": "2023-10-02",
-    "amount": 72000.0,
-    "status": "Ödendi",
-    "department": "Satış"
+    "bill_no": "FAT2023271",
+    "company": "WebTech Corp.",
+    "date": "28 06 2023",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 22,
-    "bill_no": "2024022",
-    "company": "GHI Ticaret",
-    "date": "2023-11-15",
-    "amount": 69000.0,
-    "status": "Ödendi",
-    "department": "Pazarlama"
+    "bill_no": "FAT2023272",
+    "company": "Swift Enterprises",
+    "date": "25 06 2023",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 23,
-    "bill_no": "2024023",
-    "company": "LMN Şirketi",
-    "date": "2023-12-20",
-    "amount": 76000.0,
-    "status": "Ödendi",
-    "department": "IT"
+    "bill_no": "FAT2023273",
+    "company": "TechPro Corp.",
+    "date": "22 06 2023",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 24,
-    "bill_no": "2024024",
-    "company": "OPQ AŞ",
-    "date": "2023-01-10",
-    "amount": 88000.0,
-    "status": "Ödendi",
-    "department": "Finans"
+    "bill_no": "FAT2023274",
+    "company": "Future Systems Ltd.",
+    "date": "20 06 2023",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 25,
-    "bill_no": "2024025",
-    "company": "RST Holding",
-    "date": "2023-02-25",
-    "amount": 93000.0,
-    "status": "Ödendi",
-    "department": "Satış"
+    "bill_no": "FAT2023275",
+    "company": "Tech Solutions Inc.",
+    "date": "17 06 2023",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gider"
   },
   {
     "id": 26,
-    "bill_no": "2024026",
-    "company": "UVW Ticaret",
-    "date": "2023-03-12",
-    "amount": 86000.0,
-    "status": "Ödendi",
-    "department": "Pazarlama"
+    "bill_no": "FAT2023276",
+    "company": "MegaTech Corp.",
+    "date": "15 06 2023",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 27,
-    "bill_no": "2024027",
-    "company": "ABC Şirketi",
-    "date": "2023-04-05",
-    "amount": 25000.0,
-    "status": "Ödendi",
-    "department": "Satış"
+    "bill_no": "FAT2023277",
+    "company": "WebTech Solutions",
+    "date": "12 06 2023",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 28,
-    "bill_no": "2024028",
-    "company": "XYZ Ltd.",
-    "date": "2023-05-15",
-    "amount": 92000.0,
-    "status": "Ödendi",
-    "department": "IT"
+    "bill_no": "FAT2023278",
+    "company": "Swift Enterprises",
+    "date": "10 06 2023",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 29,
-    "bill_no": "2024029",
-    "company": "123 AŞ",
-    "date": "2023-06-22",
-    "amount": 68000.0,
-    "status": "Ödendi",
-    "department": "Finans"
+    "bill_no": "FAT2023279",
+    "company": "TechPro Corp.",
+    "date": "07 06 2023",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 30,
-    "bill_no": "2024030",
-    "company": "DEF Holding",
-    "date": "2023-07-18",
-    "amount": 79000.0,
-    "status": "Ödendi",
-    "department": "Satış"
+    "bill_no": "FAT2023280",
+    "company": "Future Systems Ltd.",
+    "date": "05 06 2023",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 31,
-    "bill_no": "2024031",
-    "company": "GHI Ticaret",
-    "date": "2023-08-05",
-    "amount": 97000.0,
-    "status": "Ödendi",
-    "department": "Pazarlama"
+    "bill_no": "FAT2023281",
+    "company": "Tech Solutions Inc.",
+    "date": "02 06 2023",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 32,
-    "bill_no": "2024032",
-    "company": "LMN Şirketi",
-    "date": "2023-09-10",
-    "amount": 88000.0,
-    "status": "Ödendi",
-    "department": "IT"
+    "bill_no": "FAT2023282",
+    "company": "MegaTech Corp.",
+    "date": "30 05 2023",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 33,
-    "bill_no": "2024033",
-    "company": "OPQ AŞ",
-    "date": "2023-10-15",
-    "amount": 81000.0,
-    "status": "Ödendi",
-    "department": "Finans"
+    "bill_no": "FAT2023283",
+    "company": "WebTech Corp.",
+    "date": "28 05 2023",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 34,
-    "bill_no": "2024034",
-    "company": "RST Holding",
-    "date": "2023-11-20",
-    "amount": 75000.0,
-    "status": "Ödendi",
-    "department": "Satış"
+    "bill_no": "FAT2023284",
+    "company": "Tech Innovators",
+    "date": "25 05 2023",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 35,
-    "bill_no": "2024035",
-    "company": "UVW Ticaret",
-    "date": "2023-12-05",
-    "amount": 85000.0,
-    "status": "Ödenmedi",
-    "department": "Pazarlama"
+    "bill_no": "FAT2023285",
+    "company": "WebTech Corp.",
+    "date": "22 05 2023",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 36,
-    "bill_no": "2024036",
-    "company": "ABC Şirketi",
-    "date": "2023-01-18",
-    "amount": 91000.0,
-    "status": "Ödenmedi",
-    "department": "IT"
+    "bill_no": "FAT2023286",
+    "company": "Global Systems Ltd.",
+    "date": "20 05 2023",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 37,
-    "bill_no": "2024037",
-    "company": "XYZ Ltd.",
-    "date": "2023-02-25",
-    "amount": 98000.0,
-    "status": "Ödenmedi",
-    "department": "Finans"
+    "bill_no": "FAT2023287",
+    "company": "Tech Solutions Inc.",
+    "date": "17 05 2023",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 38,
-    "bill_no": "2024038",
-    "company": "123 AŞ",
-    "date": "2023-03-30",
-    "amount": 89000.0,
-    "status": "Ödenmedi",
-    "department": "Satış"
+    "bill_no": "FAT2023288",
+    "company": "MegaTech Corp.",
+    "date": "15 05 2023",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 39,
-    "bill_no": "2024039",
-    "company": "DEF Holding",
-    "date": "2023-04-12",
-    "amount": 72000.0,
-    "status": "Ödenmedi",
-    "department": "Pazarlama"
+    "bill_no": "FAT2023289",
+    "company": "WebTech Corp.",
+    "date": "12 05 2023",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 40,
-    "bill_no": "2024040",
-    "company": "GHI Ticaret",
-    "date": "2023-05-25",
-    "amount": 54000.0,
-    "status": "Ödendi",
-    "department": "IT"
+    "bill_no": "FAT2023290",
+    "company": "Swift Enterprises",
+    "date": "10 05 2023",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 41,
-    "bill_no": "2024041",
-    "company": "LMN Şirketi",
-    "date": "2023-06-05",
-    "amount": 65000.0,
-    "status": "Ödenmedi",
-    "department": "Finans"
+    "bill_no": "FAT2023291",
+    "company": "TechPro Corp.",
+    "date": "07 05 2023",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 42,
-    "bill_no": "2024042",
-    "company": "OPQ AŞ",
-    "date": "2023-07-15",
-    "amount": 48000.0,
-    "status": "Ödenmedi",
-    "department": "Satış"
+    "bill_no": "FAT2023292",
+    "company": "Future Systems Ltd.",
+    "date": "05 05 2023",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 43,
-    "bill_no": "2024043",
-    "company": "RST Holding",
-    "date": "2023-08-20",
-    "amount": 78000.0,
-    "status": "Ödendi",
-    "department": "Pazarlama"
+    "bill_no": "FAT2023293",
+    "company": "Tech Solutions Inc.",
+    "date": "02 05 2023",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 44,
-    "bill_no": "2024044",
-    "company": "UVW Ticaret",
-    "date": "2023-09-05",
-    "amount": 89000.0,
-    "status": "Ödenmedi",
-    "department": "IT"
+    "bill_no": "FAT2023294",
+    "company": "MegaTech Corp.",
+    "date": "30 04 2023",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 45,
-    "bill_no": "2024045",
-    "company": "ABC Şirketi",
-    "date": "2023-10-12",
-    "amount": 65000.0,
-    "status": "Ödenmedi",
-    "department": "Finans"
+    "bill_no": "FAT2023295",
+    "company": "WebTech Corp.",
+    "date": "28 04 2023",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 46,
-    "bill_no": "2024046",
-    "company": "XYZ Ltd.",
-    "date": "2023-11-18",
-    "amount": 72000.0,
-    "status": "Ödendi",
-    "department": "Satış"
+    "bill_no": "FAT2023296",
+    "company": "Swift Enterprises",
+    "date": "25 04 2023",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 47,
-    "bill_no": "2024047",
-    "company": "123 AŞ",
-    "date": "2023-12-25",
-    "amount": 58000.0,
-    "status": "Ödenmedi",
-    "department": "Pazarlama"
+    "bill_no": "FAT2023297",
+    "company": "TechPro Corp.",
+    "date": "22 04 2023",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 48,
-    "bill_no": "2024048",
-    "company": "DEF Holding",
-    "date": "2023-01-02",
-    "amount": 35000.0,
-    "status": "Ödendi",
-    "department": "IT"
+    "bill_no": "FAT2023298",
+    "company": "Future Systems Ltd.",
+    "date": "20 04 2023",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 49,
-    "bill_no": "2024049",
-    "company": "GHI Ticaret",
-    "date": "2023-02-15",
-    "amount": 48000.0,
-    "status": "Ödendi",
-    "department": "Finans"
+    "bill_no": "FAT2023299",
+    "company": "Tech Solutions Inc.",
+    "date": "17 04 2023",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 50,
-    "bill_no": "2024050",
-    "company": "LMN Şirketi",
-    "date": "2023-03-20",
-    "amount": 54000.0,
-    "status": "Ödenmedi",
-    "department": "Satış"
+    "bill_no": "FAT2023300",
+    "company": "MegaTech Corp.",
+    "date": "15 04 2023",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 51,
-    "bill_no": "2024051",
-    "company": "ABC Şirketi",
-    "date": "2023-04-05",
-    "amount": 25000.0,
-    "status": "Ödendi",
-    "department": "Satış"
+    "bill_no": "FAT2023301",
+    "company": "WebTech Corp.",
+    "date": "12 04 2023",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 52,
-    "bill_no": "2024052",
-    "company": "XYZ Ltd.",
-    "date": "2023-05-15",
-    "amount": 92000.0,
-    "status": "Ödendi",
-    "department": "IT"
+    "bill_no": "FAT2023302",
+    "company": "Swift Enterprises",
+    "date": "10 04 2023",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 53,
-    "bill_no": "2024053",
-    "company": "123 AŞ",
-    "date": "2023-06-22",
-    "amount": 68000.0,
-    "status": "Ödenmedi",
-    "department": "Finans"
+    "bill_no": "FAT2023303",
+    "company": "TechPro Corp.",
+    "date": "07 04 2023",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 54,
-    "bill_no": "2024054",
-    "company": "DEF Holding",
-    "date": "2023-07-18",
-    "amount": 79000.0,
-    "status": "Ödenmedi",
-    "department": "Satış"
+    "bill_no": "FAT2023304",
+    "company": "Future Systems Ltd.",
+    "date": "05 04 2023",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 55,
-    "bill_no": "2024055",
-    "company": "GHI Ticaret",
-    "date": "2023-08-05",
-    "amount": 97000.0,
-    "status": "Ödendi",
-    "department": "Pazarlama"
+    "bill_no": "FAT2023305",
+    "company": "Tech Solutions Inc.",
+    "date": "02 04 2023",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 56,
-    "bill_no": "2024056",
-    "company": "LMN Şirketi",
-    "date": "2023-09-10",
-    "amount": 88000.0,
-    "status": "Ödenmedi",
-    "department": "IT"
+    "bill_no": "FAT2023306",
+    "company": "MegaTech Corp.",
+    "date": "30 03 2023",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 57,
-    "bill_no": "2024057",
-    "company": "OPQ AŞ",
-    "date": "2023-10-15",
-    "amount": 81000.0,
-    "status": "Ödenmedi",
-    "department": "Finans"
+    "bill_no": "FAT2023307",
+    "company": "WebTech Corp.",
+    "date": "28 03 2023",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 58,
-    "bill_no": "2024058",
-    "company": "RST Holding",
-    "date": "2023-11-20",
-    "amount": 75000.0,
-    "status": "Ödendi",
-    "department": "Satış"
+    "bill_no": "FAT2023308",
+    "company": "Swift Enterprises",
+    "date": "25 03 2023",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 59,
-    "bill_no": "2024059",
-    "company": "UVW Ticaret",
-    "date": "2023-12-05",
-    "amount": 85000.0,
-    "status": "Ödendi",
-    "department": "Pazarlama"
+    "bill_no": "FAT2023309",
+    "company": "TechPro Corp.",
+    "date": "22 03 2023",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 60,
-    "bill_no": "2024060",
-    "company": "ABC Şirketi",
-    "date": "2023-01-18",
-    "amount": 91000.0,
-    "status": "Ödenmedi",
-    "department": "IT"
+    "bill_no": "FAT2023310",
+    "company": "Future Systems Ltd.",
+    "date": "20 03 2023",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 61,
-    "bill_no": "2024061",
-    "company": "DEF Holding",
-    "date": "2023-02-25",
-    "amount": 98000.0,
-    "status": "Ödendi",
-    "department": "Finans"
+    "bill_no": "FAT2023311",
+    "company": "Tech Solutions Inc.",
+    "date": "17 03 2023",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 62,
-    "bill_no": "2024062",
-    "company": "GHI Ticaret",
-    "date": "2023-03-30",
-    "amount": 89000.0,
-    "status": "Ödenmedi",
-    "department": "Satış"
+    "bill_no": "FAT2023312",
+    "company": "MegaTech Corp.",
+    "date": "15 03 2023",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 63,
-    "bill_no": "2024063",
-    "company": "LMN Şirketi",
-    "date": "2023-04-12",
-    "amount": 72000.0,
-    "status": "Ödenmedi",
-    "department": "Pazarlama"
+    "bill_no": "FAT2023313",
+    "company": "WebTech Corp.",
+    "date": "12 03 2023",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 64,
-    "bill_no": "2024064",
-    "company": "OPQ AŞ",
-    "date": "2023-05-25",
-    "amount": 54000.0,
-    "status": "Ödendi",
-    "department": "IT"
+    "bill_no": "FAT2023314",
+    "company": "Swift Enterprises",
+    "date": "10 03 2023",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 65,
-    "bill_no": "2024065",
-    "company": "RST Holding",
-    "date": "2023-06-05",
-    "amount": 65000.0,
-    "status": "Ödendi",
-    "department": "Finans"
+    "bill_no": "FAT2023315",
+    "company": "TechPro Corp.",
+    "date": "07 03 2023",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 66,
-    "bill_no": "2024066",
-    "company": "UVW Ticaret",
-    "date": "2023-07-15",
-    "amount": 48000.0,
-    "status": "Ödenmedi",
-    "department": "Satış"
+    "bill_no": "FAT2023316",
+    "company": "Future Systems Ltd.",
+    "date": "05 03 2023",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 67,
-    "bill_no": "2024067",
-    "company": "ABC Şirketi",
-    "date": "2023-08-20",
-    "amount": 78000.0,
-    "status": "Ödenmedi",
-    "department": "Pazarlama"
+    "bill_no": "FAT2023317",
+    "company": "Tech Solutions Inc.",
+    "date": "02 03 2023",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 68,
-    "bill_no": "2024068",
-    "company": "XYZ Ltd.",
-    "date": "2023-09-05",
-    "amount": 89000.0,
-    "status": "Ödenmedi",
-    "department": "IT"
+    "bill_no": "FAT2023318",
+    "company": "MegaTech Corp.",
+    "date": "28 02 2023",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 69,
-    "bill_no": "2024069",
-    "company": "123 AŞ",
-    "date": "2023-10-12",
-    "amount": 65000.0,
-    "status": "Ödenmedi",
-    "department": "Finans"
+    "bill_no": "FAT2023319",
+    "company": "WebTech Corp.",
+    "date": "25 02 2023",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 70,
-    "bill_no": "2024070",
-    "company": "DEF Holding",
-    "date": "2023-11-18",
-    "amount": 72000.0,
-    "status": "Ödenmedi",
-    "department": "Satış"
+    "bill_no": "FAT2023320",
+    "company": "Swift Enterprises",
+    "date": "22 02 2023",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 71,
-    "bill_no": "2024071",
-    "company": "GHI Ticaret",
-    "date": "2023-12-25",
-    "amount": 58000.0,
-    "status": "Ödenmedi",
-    "department": "Pazarlama"
+    "bill_no": "FAT2023321",
+    "company": "TechPro Corp.",
+    "date": "20 02 2023",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 72,
-    "bill_no": "2024072",
-    "company": "LMN Şirketi",
-    "date": "2023-01-02",
-    "amount": 35000.0,
-    "status": "Ödenmedi",
-    "department": "IT"
+    "bill_no": "FAT2023322",
+    "company": "Future Systems Ltd.",
+    "date": "17 02 2023",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 73,
-    "bill_no": "2024073",
-    "company": "OPQ AŞ",
-    "date": "2023-02-15",
-    "amount": 48000.0,
-    "status": "Ödendi",
-    "department": "Finans"
+    "bill_no": "FAT2023323",
+    "company": "Tech Solutions Inc.",
+    "date": "15 02 2023",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
   },
   {
     "id": 74,
-    "bill_no": "2024074",
-    "company": "RST Holding",
-    "date": "2023-03-20",
-    "amount": 54000.0,
-    "status": "Ödenmedi",
-    "department": "Satış"
+    "bill_no": "FAT2023324",
+    "company": "MegaTech Corp.",
+    "date": "12 02 2023",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 75,
-    "bill_no": "2024075",
-    "company": "UVW Ticaret",
-    "date": "2023-04-05",
-    "amount": 67000.0,
-    "status": "Ödenmedi",
-    "department": "Pazarlama"
+    "bill_no": "FAT2023325",
+    "company": "WebTech Corp.",
+    "date": "10 02 2023",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 76,
-    "bill_no": "2024076",
-    "company": "ABC Şirketi",
-    "date": "2023-05-15",
-    "amount": 95000.0,
-    "status": "Ödenmedi",
-    "department": "IT"
+    "bill_no": "FAT2023326",
+    "company": "Swift Enterprises",
+    "date": "07 02 2023",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 77,
-    "bill_no": "2024077",
-    "company": "XYZ Ltd.",
-    "date": "2023-06-22",
-    "amount": 72000.0,
-    "status": "Ödendi",
-    "department": "Finans"
+    "bill_no": "FAT2023327",
+    "company": "TechPro Corp.",
+    "date": "05 02 2023",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 78,
-    "bill_no": "2024078",
-    "company": "123 AŞ",
-    "date": "2023-07-18",
-    "amount": 83000.0,
-    "status": "Ödenmedi",
-    "department": "Satış"
+    "bill_no": "FAT2023328",
+    "company": "Future Systems Ltd.",
+    "date": "02 02 2023",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 79,
-    "bill_no": "2024079",
-    "company": "DEF Holding",
-    "date": "2023-08-05",
-    "amount": 99000.0,
-    "status": "Ödenmedi",
-    "department": "Pazarlama"
+    "bill_no": "FAT2023329",
+    "company": "Tech Solutions Inc.",
+    "date": "30 01 2023",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 80,
-    "bill_no": "2024080",
-    "company": "GHI Ticaret",
-    "date": "2023-09-10",
-    "amount": 84000.0,
-    "status": "Ödenmedi",
-    "department": "IT"
+    "bill_no": "FAT2023330",
+    "company": "MegaTech Corp.",
+    "date": "28 01 2023",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 81,
-    "bill_no": "2024081",
-    "company": "LMN Şirketi",
-    "date": "2023-10-15",
-    "amount": 76000.0,
-    "status": "Ödenmedi",
-    "department": "Finans"
+    "bill_no": "FAT2023331",
+    "company": "WebTech Corp.",
+    "date": "25 01 2023",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 82,
-    "bill_no": "2024082",
-    "company": "OPQ AŞ",
-    "date": "2023-11-20",
-    "amount": 68000.0,
-    "status": "Ödenmedi",
-    "department": "Satış"
+    "bill_no": "FAT2023332",
+    "company": "Swift Enterprises",
+    "date": "22 01 2023",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 83,
-    "bill_no": "2024083",
-    "company": "RST Holding",
-    "date": "2023-12-25",
-    "amount": 58000.0,
-    "status": "Ödenmedi",
-    "department": "Pazarlama"
+    "bill_no": "FAT2023333",
+    "company": "TechPro Corp.",
+    "date": "20 01 2023",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 84,
-    "bill_no": "2024084",
-    "company": "UVW Ticaret",
-    "date": "2023-01-02",
-    "amount": 36000.0,
-    "status": "Ödenmedi",
-    "department": "IT"
+    "bill_no": "FAT2023334",
+    "company": "Future Systems Ltd.",
+    "date": "17 01 2023",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 85,
-    "bill_no": "2024085",
-    "company": "ABC Şirketi",
-    "date": "2023-02-15",
-    "amount": 49000.0,
-    "status": "Ödenmedi",
-    "department": "Finans"
+    "bill_no": "FAT2023335",
+    "company": "Tech Solutions Inc.",
+    "date": "15 01 2023",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 86,
-    "bill_no": "2024086",
-    "company": "XYZ Ltd.",
-    "date": "2023-03-20",
-    "amount": 67000.0,
-    "status": "Ödenmedi",
-    "department": "Satış"
+    "bill_no": "FAT2023336",
+    "company": "MegaTech Corp.",
+    "date": "12 01 2023",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gelir"
   },
   {
     "id": 87,
-    "bill_no": "2024087",
-    "company": "123 AŞ",
-    "date": "2023-04-05",
-    "amount": 72000.0,
-    "status": "Ödenmedi",
-    "department": "Pazarlama"
+    "bill_no": "FAT2023337",
+    "company": "WebTech Corp.",
+    "date": "10 01 2023",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 88,
-    "bill_no": "2024088",
-    "company": "DEF Holding",
-    "date": "2023-05-15",
-    "amount": 85000.0,
-    "status": "Ödenmedi",
-    "department": "IT"
+    "bill_no": "FAT2023338",
+    "company": "Swift Enterprises",
+    "date": "07 01 2023",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 89,
-    "bill_no": "2024089",
-    "company": "GHI Ticaret",
-    "date": "2023-06-22",
-    "amount": 98000.0,
-    "status": "Ödenmedi",
-    "department": "Finans"
+    "bill_no": "FAT2023339",
+    "company": "TechPro Corp.",
+    "date": "05 01 2023",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 90,
-    "bill_no": "2024090",
-    "company": "LMN Şirketi",
-    "date": "2023-07-18",
-    "amount": 92000.0,
-    "status": "Ödenmedi",
-    "department": "Satış"
+    "bill_no": "FAT2023340",
+    "company": "Future Systems Ltd.",
+    "date": "02 01 2023",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gelir"
   },
   {
     "id": 91,
-    "bill_no": "2024091",
-    "company": "OPQ AŞ",
-    "date": "2023-08-05",
-    "amount": 79000.0,
-    "status": "Ödenmedi",
-    "department": "Pazarlama"
+    "bill_no": "FAT2023341",
+    "company": "Tech Solutions Inc.",
+    "date": "30 12 2022",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 92,
-    "bill_no": "2024092",
-    "company": "RST Holding",
-    "date": "2023-09-10",
-    "amount": 84000.0,
-    "status": "Ödenmedi",
-    "department": "IT"
+    "bill_no": "FAT2023342",
+    "company": "MegaTech Corp.",
+    "date": "28 12 2022",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gelir"
   },
   {
     "id": 93,
-    "bill_no": "2024093",
-    "company": "UVW Ticaret",
-    "date": "2023-10-15",
-    "amount": 97000.0,
-    "status": "Ödenmedi",
-    "department": "Finans"
+    "bill_no": "FAT2023343",
+    "company": "WebTech Corp.",
+    "date": "25 12 2022",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 94,
-    "bill_no": "2024094",
-    "company": "ABC Şirketi",
-    "date": "2023-11-20",
-    "amount": 88000.0,
-    "status": "Ödenmedi",
-    "department": "Satış"
+    "bill_no": "FAT2023344",
+    "company": "Swift Enterprises",
+    "date": "22 12 2022",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gelir"
   },
   {
     "id": 95,
-    "bill_no": "2024095",
-    "company": "XYZ Ltd.",
-    "date": "2023-12-25",
-    "amount": 76000.0,
-    "status": "Ödenmedi",
-    "department": "Pazarlama"
+    "bill_no": "FAT2023345",
+    "company": "TechPro Corp.",
+    "date": "20 12 2022",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gelir"
   },
   {
     "id": 96,
-    "bill_no": "2024096",
-    "company": "123 AŞ",
-    "date": "2023-01-02",
-    "amount": 68000.0,
-    "status": "Ödenmedi",
-    "department": "IT"
+    "bill_no": "FAT2023346",
+    "company": "Future Systems Ltd.",
+    "date": "17 12 2022",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gelir"
   },
   {
     "id": 97,
-    "bill_no": "2024097",
-    "company": "DEF Holding",
-    "date": "2023-02-15",
-    "amount": 89000.0,
-    "status": "Ödenmedi",
-    "department": "Finans"
+    "bill_no": "FAT2023347",
+    "company": "Tech Solutions Inc.",
+    "date": "15 12 2022",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gelir"
   },
   {
     "id": 98,
-    "bill_no": "2024098",
-    "company": "GHI Ticaret",
-    "date": "2023-03-20",
-    "amount": 92000.0,
-    "status": "Ödenmedi",
-    "department": "Satış"
+    "bill_no": "FAT2023348",
+    "company": "MegaTech Corp.",
+    "date": "12 12 2022",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gelir"
   },
   {
     "id": 99,
-    "bill_no": "2024099",
-    "company": "LMN Şirketi",
-    "date": "2023-04-05",
-    "amount": 78000.0,
-    "status": "Ödenmedi",
-    "department": "Pazarlama"
+    "bill_no": "FAT2023349",
+    "company": "WebTech Corp.",
+    "date": "10 12 2022",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   },
   {
     "id": 100,
-    "bill_no": "2024100",
-    "company": "OPQ AŞ",
-    "date": "2023-05-15",
-    "amount": 86000.0,
-    "status": "Ödenmedi",
-    "department": "IT"
+    "bill_no": "FAT2023349",
+    "company": "WebTech Corp.",
+    "date": "9 12 2022",
+    "amount": 34567.89,
+    "department": "IT",
+    "status": "Gider",
+    "expense_status": "Ödendi"
+  },
+  {
+    "id": 101,
+    "bill_no": "FAT2023351",
+    "company": "Swift Enterprises",
+    "date": "07 12 2022",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gelir"
+  },
+  {
+    "id": 102,
+    "bill_no": "FAT2023352",
+    "company": "TechPro Corp.",
+    "date": "05 12 2022",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gelir"
+  },
+  {
+    "id": 103,
+    "bill_no": "FAT2023353",
+    "company": "Future Systems Ltd.",
+    "date": "02 12 2022",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gelir"
+  },
+  {
+    "id": 104,
+    "bill_no": "FAT2023354",
+    "company": "Tech Solutions Inc.",
+    "date": "30 11 2022",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gelir"
+  },
+  {
+    "id": 105,
+    "bill_no": "FAT2023355",
+    "company": "MegaTech Corp.",
+    "date": "28 11 2022",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gelir"
+  },
+  {
+    "id": 106,
+    "bill_no": "FAT2023356",
+    "company": "WebTech Corp.",
+    "date": "25 11 2022",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödendi"
+  },
+  {
+    "id": 107,
+    "bill_no": "FAT2023357",
+    "company": "Swift Enterprises",
+    "date": "22 11 2022",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gelir"
+  },
+  {
+    "id": 108,
+    "bill_no": "FAT2023358",
+    "company": "TechPro Corp.",
+    "date": "20 11 2022",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gelir"
+  },
+  {
+    "id": 109,
+    "bill_no": "FAT2023359",
+    "company": "Future Systems Ltd.",
+    "date": "17 11 2022",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gelir"
+  },
+  {
+    "id": 110,
+    "bill_no": "FAT2023360",
+    "company": "Tech Solutions Inc.",
+    "date": "15 11 2022",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gelir"
+  },
+  {
+    "id": 111,
+    "bill_no": "FAT2023361",
+    "company": "MegaTech Corp.",
+    "date": "12 11 2022",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gelir"
+  },
+  {
+    "id": 112,
+    "bill_no": "FAT2023362",
+    "company": "WebTech Corp.",
+    "date": "10 11 2022",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödendi"
+  },
+  {
+    "id": 113,
+    "bill_no": "FAT2023363",
+    "company": "Swift Enterprises",
+    "date": "07 11 2022",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gelir"
+  },
+  {
+    "id": 114,
+    "bill_no": "FAT2023364",
+    "company": "TechPro Corp.",
+    "date": "05 11 2022",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gelir"
+  },
+  {
+    "id": 115,
+    "bill_no": "FAT2023365",
+    "company": "Future Systems Ltd.",
+    "date": "02 11 2022",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gelir"
+  },
+  {
+    "id": 116,
+    "bill_no": "FAT2023366",
+    "company": "Tech Solutions Inc.",
+    "date": "30 10 2022",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gelir"
+  },
+  {
+    "id": 117,
+    "bill_no": "FAT2023367",
+    "company": "MegaTech Corp.",
+    "date": "28 10 2022",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gelir"
+  },
+  {
+    "id": 118,
+    "bill_no": "FAT2023368",
+    "company": "WebTech Corp.",
+    "date": "25 10 2022",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödendi"
+  },
+  {
+    "id": 119,
+    "bill_no": "FAT2023369",
+    "company": "Swift Enterprises",
+    "date": "22 10 2022",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gelir"
+  },
+  {
+    "id": 120,
+    "bill_no": "FAT2023370",
+    "company": "TechPro Corp.",
+    "date": "20 10 2022",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gelir"
+  },
+  {
+    "id": 121,
+    "bill_no": "FAT2023371",
+    "company": "Future Systems Ltd.",
+    "date": "17 10 2022",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gelir"
+  },
+  {
+    "id": 122,
+    "bill_no": "FAT2023372",
+    "company": "Tech Solutions Inc.",
+    "date": "15 10 2022",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gelir"
+  },
+  {
+    "id": 123,
+    "bill_no": "FAT2023373",
+    "company": "MegaTech Corp.",
+    "date": "12 10 2022",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gelir"
+  },
+  {
+    "id": 124,
+    "bill_no": "FAT2023374",
+    "company": "WebTech Corp.",
+    "date": "10 10 2022",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödendi"
+  },
+  {
+    "id": 125,
+    "bill_no": "FAT2023375",
+    "company": "Swift Enterprises",
+    "date": "07 10 2022",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gelir"
+  },
+  {
+    "id": 126,
+    "bill_no": "FAT2023376",
+    "company": "TechPro Corp.",
+    "date": "05 10 2022",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gelir"
+  },
+  {
+    "id": 127,
+    "bill_no": "FAT2023377",
+    "company": "Future Systems Ltd.",
+    "date": "02 10 2022",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gelir"
+  },
+  {
+    "id": 128,
+    "bill_no": "FAT2023378",
+    "company": "Tech Solutions Inc.",
+    "date": "30 09 2022",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gelir"
+  },
+  {
+    "id": 129,
+    "bill_no": "FAT2023379",
+    "company": "MegaTech Corp.",
+    "date": "28 09 2022",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gelir"
+  },
+  {
+    "id": 130,
+    "bill_no": "FAT2023380",
+    "company": "WebTech Corp.",
+    "date": "25 09 2022",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödendi"
+  },
+  {
+    "id": 131,
+    "bill_no": "FAT2023381",
+    "company": "Swift Enterprises",
+    "date": "22 09 2022",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gelir"
+  },
+  {
+    "id": 132,
+    "bill_no": "FAT2023382",
+    "company": "TechPro Corp.",
+    "date": "20 09 2022",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gelir"
+  },
+  {
+    "id": 133,
+    "bill_no": "FAT2023383",
+    "company": "Future Systems Ltd.",
+    "date": "17 09 2022",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gelir"
+  },
+  {
+    "id": 134,
+    "bill_no": "FAT2023384",
+    "company": "Tech Solutions Inc.",
+    "date": "15 09 2022",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gelir"
+  },
+  {
+    "id": 135,
+    "bill_no": "FAT2023385",
+    "company": "MegaTech Corp.",
+    "date": "12 09 2022",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gelir"
+  },
+  {
+    "id": 136,
+    "bill_no": "FAT2023386",
+    "company": "WebTech Corp.",
+    "date": "10 09 2022",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödendi"
+  },
+  {
+    "id": 137,
+    "bill_no": "FAT2023387",
+    "company": "Swift Enterprises",
+    "date": "07 09 2022",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gelir"
+  },
+  {
+    "id": 138,
+    "bill_no": "FAT2023388",
+    "company": "TechPro Corp.",
+    "date": "05 09 2022",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gelir"
+  },
+  {
+    "id": 139,
+    "bill_no": "FAT2023389",
+    "company": "Future Systems Ltd.",
+    "date": "02 09 2022",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gelir"
+  },
+  {
+    "id": 140,
+    "bill_no": "FAT2023390",
+    "company": "Tech Solutions Inc.",
+    "date": "30 08 2022",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gelir"
+  },
+  {
+    "id": 141,
+    "bill_no": "FAT2023391",
+    "company": "MegaTech Corp.",
+    "date": "28 08 2022",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gelir"
+  },
+  {
+    "id": 142,
+    "bill_no": "FAT2023392",
+    "company": "WebTech Corp.",
+    "date": "25 08 2022",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödendi"
+  },
+  {
+    "id": 143,
+    "bill_no": "FAT2023393",
+    "company": "Swift Enterprises",
+    "date": "22 08 2022",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gelir"
+  },
+  {
+    "id": 144,
+    "bill_no": "FAT2023394",
+    "company": "TechPro Corp.",
+    "date": "20 08 2022",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gelir"
+  },
+  {
+    "id": 145,
+    "bill_no": "FAT2023395",
+    "company": "Future Systems Ltd.",
+    "date": "17 08 2022",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gelir"
+  },
+  {
+    "id": 146,
+    "bill_no": "FAT2023396",
+    "company": "Tech Solutions Inc.",
+    "date": "15 08 2022",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gelir"
+  },
+  {
+    "id": 147,
+    "bill_no": "FAT2023397",
+    "company": "MegaTech Corp.",
+    "date": "12 08 2022",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gelir"
+  },
+  {
+    "id": 148,
+    "bill_no": "FAT2023398",
+    "company": "WebTech Corp.",
+    "date": "10 08 2022",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödendi"
+  },
+  {
+    "id": 149,
+    "bill_no": "FAT2023399",
+    "company": "Swift Enterprises",
+    "date": "07 08 2022",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gelir"
+  },
+  {
+    "id": 150,
+    "bill_no": "FAT2023400",
+    "company": "TechPro Corp.",
+    "date": "05 08 2022",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gelir"
+  },
+  {
+    "id": 151,
+    "bill_no": "FAT2023401",
+    "company": "Future Systems Ltd.",
+    "date": "02 08 2022",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gelir"
+  },
+  {
+    "id": 152,
+    "bill_no": "FAT2023402",
+    "company": "Tech Solutions Inc.",
+    "date": "30 07 2022",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gelir"
+  },
+  {
+    "id": 153,
+    "bill_no": "FAT2023403",
+    "company": "MegaTech Corp.",
+    "date": "28 07 2022",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gelir"
+  },
+  {
+    "id": 154,
+    "bill_no": "FAT2023404",
+    "company": "WebTech Corp.",
+    "date": "25 07 2022",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödendi"
+  },
+  {
+    "id": 155,
+    "bill_no": "FAT2023405",
+    "company": "Swift Enterprises",
+    "date": "22 07 2022",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gelir"
+  },
+  {
+    "id": 156,
+    "bill_no": "FAT2023406",
+    "company": "TechPro Corp.",
+    "date": "20 07 2022",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gelir"
+  },
+  {
+    "id": 157,
+    "bill_no": "FAT2023407",
+    "company": "Future Systems Ltd.",
+    "date": "17 07 2022",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gelir"
+  },
+  {
+    "id": 158,
+    "bill_no": "FAT2023408",
+    "company": "Tech Solutions Inc.",
+    "date": "15 07 2022",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gelir"
+  },
+  {
+    "id": 159,
+    "bill_no": "FAT2023409",
+    "company": "MegaTech Corp.",
+    "date": "12 07 2022",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gelir"
+  },
+  {
+    "id": 160,
+    "bill_no": "FAT2023410",
+    "company": "WebTech Corp.",
+    "date": "10 07 2022",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödendi"
+  },
+  {
+    "id": 161,
+    "bill_no": "FAT2023411",
+    "company": "Swift Enterprises",
+    "date": "07 07 2022",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gelir"
+  },
+  {
+    "id": 162,
+    "bill_no": "FAT2023412",
+    "company": "TechPro Corp.",
+    "date": "05 07 2022",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gelir"
+  },
+  {
+    "id": 163,
+    "bill_no": "FAT2023413",
+    "company": "Future Systems Ltd.",
+    "date": "02 07 2022",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gelir"
+  },
+  {
+    "id": 164,
+    "bill_no": "FAT2023414",
+    "company": "Tech Solutions Inc.",
+    "date": "30 06 2022",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gelir"
+  },
+  {
+    "id": 165,
+    "bill_no": "FAT2023415",
+    "company": "MegaTech Corp.",
+    "date": "28 06 2022",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gelir"
+  },
+  {
+    "id": 166,
+    "bill_no": "FAT2023416",
+    "company": "WebTech Corp.",
+    "date": "25 06 2022",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödendi"
+  },
+  {
+    "id": 167,
+    "bill_no": "FAT2023417",
+    "company": "Swift Enterprises",
+    "date": "22 06 2022",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gelir"
+  },
+  {
+    "id": 168,
+    "bill_no": "FAT2023418",
+    "company": "TechPro Corp.",
+    "date": "20 06 2022",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gelir"
+  },
+  {
+    "id": 169,
+    "bill_no": "FAT2023419",
+    "company": "Future Systems Ltd.",
+    "date": "17 06 2022",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gelir"
+  },
+  {
+    "id": 170,
+    "bill_no": "FAT2023420",
+    "company": "Tech Solutions Inc.",
+    "date": "15 06 2022",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gelir"
+  },
+  {
+    "id": 171,
+    "bill_no": "FAT2023421",
+    "company": "MegaTech Corp.",
+    "date": "12 06 2022",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gelir"
+  },
+  {
+    "id": 172,
+    "bill_no": "FAT2023422",
+    "company": "WebTech Corp.",
+    "date": "10 06 2022",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
+  },
+  {
+    "id": 173,
+    "bill_no": "FAT2023423",
+    "company": "Swift Enterprises",
+    "date": "07 06 2022",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gelir"
+  },
+  {
+    "id": 174,
+    "bill_no": "FAT2023424",
+    "company": "TechPro Corp.",
+    "date": "05 06 2022",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gelir"
+  },
+  {
+    "id": 175,
+    "bill_no": "FAT2023425",
+    "company": "Future Systems Ltd.",
+    "date": "02 06 2022",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gelir"
+  },
+  {
+    "id": 176,
+    "bill_no": "FAT2023426",
+    "company": "Tech Solutions Inc.",
+    "date": "30 05 2022",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gelir"
+  },
+  {
+    "id": 177,
+    "bill_no": "FAT2023427",
+    "company": "MegaTech Corp.",
+    "date": "28 05 2022",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gelir"
+  },
+  {
+    "id": 178,
+    "bill_no": "FAT2023428",
+    "company": "WebTech Corp.",
+    "date": "25 05 2022",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
+  },
+  {
+    "id": 179,
+    "bill_no": "FAT2023429",
+    "company": "Swift Enterprises",
+    "date": "22 05 2022",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gelir"
+  },
+  {
+    "id": 180,
+    "bill_no": "FAT2023430",
+    "company": "TechPro Corp.",
+    "date": "20 05 2022",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gelir"
+  },
+  {
+    "id": 181,
+    "bill_no": "FAT2023431",
+    "company": "Future Systems Ltd.",
+    "date": "17 05 2022",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gelir"
+  },
+  {
+    "id": 182,
+    "bill_no": "FAT2023432",
+    "company": "Tech Solutions Inc.",
+    "date": "15 05 2022",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gelir"
+  },
+  {
+    "id": 183,
+    "bill_no": "FAT2023433",
+    "company": "MegaTech Corp.",
+    "date": "12 05 2022",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gelir"
+  },
+  {
+    "id": 184,
+    "bill_no": "FAT2023434",
+    "company": "WebTech Corp.",
+    "date": "10 05 2022",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
+  },
+  {
+    "id": 185,
+    "bill_no": "FAT2023435",
+    "company": "Swift Enterprises",
+    "date": "07 05 2022",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gelir"
+  },
+  {
+    "id": 186,
+    "bill_no": "FAT2023436",
+    "company": "TechPro Corp.",
+    "date": "05 05 2022",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gelir"
+  },
+  {
+    "id": 187,
+    "bill_no": "FAT2023437",
+    "company": "Future Systems Ltd.",
+    "date": "02 05 2022",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gelir"
+  },
+  {
+    "id": 188,
+    "bill_no": "FAT2023438",
+    "company": "Tech Solutions Inc.",
+    "date": "30 04 2022",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gelir"
+  },
+  {
+    "id": 189,
+    "bill_no": "FAT2023439",
+    "company": "MegaTech Corp.",
+    "date": "28 04 2022",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gelir"
+  },
+  {
+    "id": 190,
+    "bill_no": "FAT2023440",
+    "company": "WebTech Corp.",
+    "date": "25 04 2022",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
+  },
+  {
+    "id": 191,
+    "bill_no": "FAT2023441",
+    "company": "Swift Enterprises",
+    "date": "22 04 2022",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gelir"
+  },
+  {
+    "id": 192,
+    "bill_no": "FAT2023442",
+    "company": "TechPro Corp.",
+    "date": "20 04 2022",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gelir"
+  },
+  {
+    "id": 193,
+    "bill_no": "FAT2023443",
+    "company": "Future Systems Ltd.",
+    "date": "17 04 2022",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gelir"
+  },
+  {
+    "id": 194,
+    "bill_no": "FAT2023444",
+    "company": "Tech Solutions Inc.",
+    "date": "15 04 2022",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gelir"
+  },
+  {
+    "id": 195,
+    "bill_no": "FAT2023445",
+    "company": "MegaTech Corp.",
+    "date": "12 04 2022",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gelir"
+  },
+  {
+    "id": 196,
+    "bill_no": "FAT2023446",
+    "company": "WebTech Corp.",
+    "date": "10 04 2022",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
+  },
+  {
+    "id": 197,
+    "bill_no": "FAT2023447",
+    "company": "Swift Enterprises",
+    "date": "07 04 2022",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gelir"
+  },
+  {
+    "id": 198,
+    "bill_no": "FAT2023448",
+    "company": "TechPro Corp.",
+    "date": "05 04 2022",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gelir"
+  },
+  {
+    "id": 199,
+    "bill_no": "FAT2023449",
+    "company": "Future Systems Ltd.",
+    "date": "02 04 2022",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gelir"
+  },
+  {
+    "id": 200,
+    "bill_no": "FAT2023450",
+    "company": "Tech Solutions Inc.",
+    "date": "30 03 2022",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gelir"
+  },
+  {
+    "id": 201,
+    "bill_no": "FAT2023451",
+    "company": "MegaTech Corp.",
+    "date": "28 03 2022",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gelir"
+  },
+  {
+    "id": 202,
+    "bill_no": "FAT2023452",
+    "company": "WebTech Corp.",
+    "date": "25 03 2022",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
+  },
+  {
+    "id": 203,
+    "bill_no": "FAT2023453",
+    "company": "Swift Enterprises",
+    "date": "22 03 2022",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gelir"
+  },
+  {
+    "id": 204,
+    "bill_no": "FAT2023454",
+    "company": "TechPro Corp.",
+    "date": "20 03 2022",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gelir"
+  },
+  {
+    "id": 205,
+    "bill_no": "FAT2023455",
+    "company": "Future Systems Ltd.",
+    "date": "17 03 2022",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gelir"
+  },
+  {
+    "id": 206,
+    "bill_no": "FAT2023456",
+    "company": "Tech Solutions Inc.",
+    "date": "15 03 2022",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gelir"
+  },
+  {
+    "id": 207,
+    "bill_no": "FAT2023457",
+    "company": "MegaTech Corp.",
+    "date": "12 03 2022",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gelir"
+  },
+  {
+    "id": 208,
+    "bill_no": "FAT2023458",
+    "company": "WebTech Corp.",
+    "date": "10 03 2022",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
+  },
+  {
+    "id": 209,
+    "bill_no": "FAT2023459",
+    "company": "Swift Enterprises",
+    "date": "07 03 2022",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gelir"
+  },
+  {
+    "id": 210,
+    "bill_no": "FAT2023460",
+    "company": "TechPro Corp.",
+    "date": "05 03 2022",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gelir"
+  },
+  {
+    "id": 211,
+    "bill_no": "FAT2023461",
+    "company": "Future Systems Ltd.",
+    "date": "02 03 2022",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gelir"
+  },
+  {
+    "id": 212,
+    "bill_no": "FAT2023462",
+    "company": "Tech Solutions Inc.",
+    "date": "28 02 2022",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gelir"
+  },
+  {
+    "id": 213,
+    "bill_no": "FAT2023463",
+    "company": "MegaTech Corp.",
+    "date": "26 02 2022",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gelir"
+  },
+  {
+    "id": 214,
+    "bill_no": "FAT2023464",
+    "company": "WebTech Corp.",
+    "date": "23 02 2022",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
+  },
+  {
+    "id": 215,
+    "bill_no": "FAT2023465",
+    "company": "Swift Enterprises",
+    "date": "20 02 2022",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gelir"
+  },
+  {
+    "id": 216,
+    "bill_no": "FAT2023466",
+    "company": "TechPro Corp.",
+    "date": "18 02 2022",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gelir"
+  },
+  {
+    "id": 217,
+    "bill_no": "FAT2023467",
+    "company": "Future Systems Ltd.",
+    "date": "15 02 2022",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gelir"
+  },
+  {
+    "id": 218,
+    "bill_no": "FAT2023468",
+    "company": "Tech Solutions Inc.",
+    "date": "13 02 2022",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gelir"
+  },
+  {
+    "id": 219,
+    "bill_no": "FAT2023469",
+    "company": "MegaTech Corp.",
+    "date": "10 02 2022",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gelir"
+  },
+  {
+    "id": 220,
+    "bill_no": "FAT2023470",
+    "company": "WebTech Corp.",
+    "date": "08 02 2022",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
+  },
+  {
+    "id": 221,
+    "bill_no": "FAT2023471",
+    "company": "Swift Enterprises",
+    "date": "05 02 2022",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gelir"
+  },
+  {
+    "id": 222,
+    "bill_no": "FAT2023472",
+    "company": "TechPro Corp.",
+    "date": "03 02 2022",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gelir"
+  },
+  {
+    "id": 223,
+    "bill_no": "FAT2023473",
+    "company": "Future Systems Ltd.",
+    "date": "31 01 2022",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gelir"
+  },
+  {
+    "id": 224,
+    "bill_no": "FAT2023474",
+    "company": "Tech Solutions Inc.",
+    "date": "29 01 2022",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gelir"
+  },
+  {
+    "id": 225,
+    "bill_no": "FAT2023475",
+    "company": "MegaTech Corp.",
+    "date": "26 01 2022",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gelir"
+  },
+  {
+    "id": 226,
+    "bill_no": "FAT2023476",
+    "company": "WebTech Corp.",
+    "date": "24 01 2022",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
+  },
+  {
+    "id": 227,
+    "bill_no": "FAT2023477",
+    "company": "Swift Enterprises",
+    "date": "21 01 2022",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gelir"
+  },
+  {
+    "id": 228,
+    "bill_no": "FAT2023478",
+    "company": "TechPro Corp.",
+    "date": "19 01 2022",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gelir"
+  },
+  {
+    "id": 229,
+    "bill_no": "FAT2023479",
+    "company": "Future Systems Ltd.",
+    "date": "16 01 2022",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gelir"
+  },
+  {
+    "id": 230,
+    "bill_no": "FAT2023480",
+    "company": "Tech Solutions Inc.",
+    "date": "14 01 2022",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gelir"
+  },
+  {
+    "id": 231,
+    "bill_no": "FAT2023481",
+    "company": "MegaTech Corp.",
+    "date": "11 01 2022",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gelir"
+  },
+  {
+    "id": 232,
+    "bill_no": "FAT2023482",
+    "company": "WebTech Corp.",
+    "date": "09 01 2022",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
+  },
+  {
+    "id": 233,
+    "bill_no": "FAT2023483",
+    "company": "Swift Enterprises",
+    "date": "06 01 2022",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gelir"
+  },
+  {
+    "id": 234,
+    "bill_no": "FAT2023484",
+    "company": "TechPro Corp.",
+    "date": "04 01 2022",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gelir"
+  },
+  {
+    "id": 235,
+    "bill_no": "FAT2023485",
+    "company": "Future Systems Ltd.",
+    "date": "01 01 2022",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gelir"
+  },
+  {
+    "id": 236,
+    "bill_no": "FAT2023486",
+    "company": "Tech Solutions Inc.",
+    "date": "30 09 2023",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gelir"
+  },
+  {
+    "id": 237,
+    "bill_no": "FAT2023487",
+    "company": "MegaTech Corp.",
+    "date": "28 09 2023",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gelir"
+  },
+  {
+    "id": 238,
+    "bill_no": "FAT2023488",
+    "company": "WebTech Corp.",
+    "date": "25 09 2023",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
+  },
+  {
+    "id": 239,
+    "bill_no": "FAT2023489",
+    "company": "Swift Enterprises",
+    "date": "22 09 2023",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gelir"
+  },
+  {
+    "id": 240,
+    "bill_no": "FAT2023490",
+    "company": "TechPro Corp.",
+    "date": "20 09 2023",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gelir"
+  },
+  {
+    "id": 241,
+    "bill_no": "FAT2023491",
+    "company": "Future Systems Ltd.",
+    "date": "17 09 2023",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gelir"
+  },
+  {
+    "id": 242,
+    "bill_no": "FAT2023492",
+    "company": "Tech Solutions Inc.",
+    "date": "15 09 2023",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gelir"
+  },
+  {
+    "id": 243,
+    "bill_no": "FAT2023493",
+    "company": "MegaTech Corp.",
+    "date": "12 09 2023",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gelir"
+  },
+  {
+    "id": 244,
+    "bill_no": "FAT2023494",
+    "company": "WebTech Corp.",
+    "date": "10 09 2023",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödenmedi"
+  },
+  {
+    "id": 245,
+    "bill_no": "FAT2023495",
+    "company": "Swift Enterprises",
+    "date": "07 09 2023",
+    "amount": 90123.45,
+    "department": "Satış",
+    "status": "Gelir"
+  },
+  {
+    "id": 246,
+    "bill_no": "FAT2023496",
+    "company": "TechPro Corp.",
+    "date": "05 09 2023",
+    "amount": 23456.78,
+    "department": "Finans",
+    "status": "Gelir"
+  },
+  {
+    "id": 247,
+    "bill_no": "FAT2023497",
+    "company": "Future Systems Ltd.",
+    "date": "02 09 2023",
+    "amount": 56789.01,
+    "department": "Üretim",
+    "status": "Gelir"
+  },
+  {
+    "id": 248,
+    "bill_no": "FAT2023498",
+    "company": "Tech Solutions Inc.",
+    "date": "30 09 2023",
+    "amount": 12345.67,
+    "department": "IT",
+    "status": "Gelir"
+  },
+  {
+    "id": 249,
+    "bill_no": "FAT2023499",
+    "company": "MegaTech Corp.",
+    "date": "28 09 2023",
+    "amount": 78901.23,
+    "department": "Pazarlama",
+    "status": "Gelir"
+  },
+  {
+    "id": 250,
+    "bill_no": "FAT2023500",
+    "company": "WebTech Corp.",
+    "date": "25 09 2023",
+    "amount": 34567.89,
+    "department": "Muhasebe",
+    "status": "Gider",
+    "expense_status": "Ödendi"
   }
 ]

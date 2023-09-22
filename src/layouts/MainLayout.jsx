@@ -6,8 +6,10 @@ function MainLayout() {
   return (
     <>
       <Navbar />
-      <Sidebar />
-      <Outlet />
+      <div style={{ display: "flex" }}>
+        <Sidebar />
+        <Outlet />
+      </div>
     </>
   );
 }

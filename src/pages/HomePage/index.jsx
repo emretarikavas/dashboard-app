@@ -1,44 +1,18 @@
-// HomePage.jsx
-
-/* import Logout from "src/components/Logout";
-
-import { useEffect, useState } from "react";
-import { billingData } from "src/data/index"; */
-function HomePage() {
-  /* const [relevantBills, setRelevantBills] = useState([]);
-
-  useEffect(() => {
-    const department = localStorage.getItem("department");
-    const filteredBills = billingData.filter(
-      (bill) => bill.department === department
-    );
-    setRelevantBills(filteredBills);
-  }, []); */
-
+import "./homepage.scss";
+const index = () => {
   return (
-    <>
-      {/* <div
-        style={{
-          padding: "24px",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center"
-        }}
-      >
-        <h1 style={{ fontSize: 40 }}>HomePage</h1>
-
-        <Logout />
-      </div> */}
-      {/* {relevantBills.map((bill) => (
-        <div key={bill.id}>
-          <h2>{bill.company}</h2>
-          <p>{bill.date}</p>
-          <p>{bill.amount}</p>
-          <p>{bill.status}</p>
-        </div>
-      ))} */}
-    </>
+    <div className="home">
+      <div className="box box1">Box 1</div>
+      <div className="box box2">Box 2</div>
+      <div className="box box3">Box 3</div>
+      <div className="box box4">Box 4</div>
+      <div className="box box5">Box 5</div>
+      <div className="box box6">Box 6</div>
+      <div className="box box7">Box 7</div>
+      <div className="box box8">Box 8</div>
+      <div className="box box9">Box 9</div>
+    </div>
   );
-}
+};
 
-export default HomePage;
+export default index;
