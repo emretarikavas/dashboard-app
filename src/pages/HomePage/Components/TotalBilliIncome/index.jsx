@@ -5,16 +5,10 @@ import { useFakeData } from "src/context/useFakeData";
 import "./totalbillIncome.scss";
 
 const index = ({ days }) => {
-  const { filteredData, filterData } = useFakeData();
-
-  useEffect(() => {
-    filterData(days);
-  }, [days, filterData]);
-
   return (
     <div>
       <h2>Toplam Gelir Fatura Sayısı</h2>
-      <h3 className="totalBillingIncome">{filteredData.length}</h3>
+      <h3 className="totalBillingIncome"></h3>
       <Link to="/billings">Hepsini Göster</Link>
       <h4 className="percent">%</h4>
     </div>
