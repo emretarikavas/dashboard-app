@@ -1,10 +1,13 @@
 import "./homepage.scss";
 import TotalIncomeCount from "./components/TotalIncomeCount";
 import TotalExpenseCount from "./components/TotalExpenseCount";
+import PendingList from "./components/PendingList";
 const index = () => {
   return (
     <div className="home">
-      <div className="box box1">Box 1</div>
+      <div className="box box1">
+        <PendingList />
+      </div>
       <div className="box box2">
         <TotalIncomeCount />
       </div>

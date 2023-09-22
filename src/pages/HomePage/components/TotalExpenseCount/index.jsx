@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./totalexpensecount.scss";
 import { billingData } from "src/data";
+import { RiBillLine } from "react-icons/ri";
+
 const index = () => {
   const [totalExpenseBills, setTotalExpenseBills] = useState(0);
 
@@ -11,10 +13,12 @@ const index = () => {
   }, []);
   return (
     <div>
-      <h2>Toplam Gelir Fatura Sayısı</h2>
+      <div className="titleContainer">
+        <RiBillLine />
+        <h2>Toplam Gider Fatura Sayısı</h2>
+      </div>
       <h3 className="totalBillingIncome">{totalExpenseBills}</h3>
-      <Link to="/billings">Hepsini Göster</Link>
-      <h4 className="percent">%</h4>
+      <h4 className="percent">40%</h4>
     </div>
   );
 };

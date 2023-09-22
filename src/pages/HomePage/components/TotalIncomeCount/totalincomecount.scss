@@ -1,1 +1,40 @@
+.boxContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 
+  .titleContainer {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    h2 {
+      font-size: 18px;
+    }
+  }
+
+  .countContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+    .totalBillingIncome {
+      font-size: 40px;
+      font-weight: bold;
+    }
+  }
+
+  .percentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
