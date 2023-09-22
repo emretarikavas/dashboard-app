@@ -1,0 +1,59 @@
+.income-title {
+  font-size: 24px;
+  margin-bottom: 18px;
+  color: $bar-chart;
+}
+
+.pendingList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $dark-300;
+    }
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      .with-iconn {
+        display: flex;
+        gap: 3px;
+        align-items: center;
+
+        p {
+          font-size: 16px;
+        }
+        svg {
+          width: 24px;
+          height: 24px;
+          color: $bar-chart;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+
+      .with-iconn {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+      }
+      p {
+        font-size: 16px;
+        font-weight: bold;
+      }
+      svg {
+        width: 24px;
+        height: 24px;
+        color: $bar-chart;
+      }
+    }
+  }
+}

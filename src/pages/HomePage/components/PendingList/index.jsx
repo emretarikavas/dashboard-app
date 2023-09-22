@@ -24,7 +24,7 @@ const PendingList = () => {
           <div key={index} className="list-item">
             <div className="left">
               <div className="with-icon">
-                <CompanyIcon />
+                <CompanyIcon fill="#8f8bff" />
                 <p>{bill.company}</p>
               </div>
               <div className="with-icon">
@@ -34,7 +34,7 @@ const PendingList = () => {
             </div>
             <div className="right">
               <div className="with-icon">
-                <PiMoney />
+                <PiMoney fill="#8f8bff" />
                 <p>{bill.amount}</p>
               </div>
             </div>

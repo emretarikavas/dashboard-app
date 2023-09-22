@@ -1,10 +1,10 @@
 import React from "react";
 
-const CompanyIcon = () => {
+const CompanyIcon = ({ fill }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      fill="#8f8bff"
+      fill={fill}
       viewBox="0 0 25 25"
       id="company"
     >
