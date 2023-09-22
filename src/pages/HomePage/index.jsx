@@ -1,12 +1,12 @@
 import "./homepage.scss";
-import TotalBilliIcome from "./Components/TotalBilliIcome";
+import TotalBilliIncome from "./Components/TotalBilliIncome";
 const index = () => {
   return (
     <div className="home">
       <div className="box box1">Box 1</div>
       <div className="box box2">
         Box 2
-        <TotalBilliIcome />
+        <TotalBilliIncome />
       </div>
       <div className="box box3">Box 3</div>
       <div className="box box4">Box 4</div>

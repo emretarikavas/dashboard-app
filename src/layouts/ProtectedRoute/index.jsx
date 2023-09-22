@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+
 import MainLayout from "src/layouts/MainLayout";
 
 function ProtectedRoute({ children }) {
