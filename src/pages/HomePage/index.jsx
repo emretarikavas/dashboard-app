@@ -1,15 +1,15 @@
 import "./homepage.scss";
-import TotalBillExpense from "src/pages/HomePage/components/TotalBillExpense";
-import TotalBillIncome from "src/pages/HomePage/components/TotalBillIncome";
+import TotalIncomeCount from "./components/TotalIncomeCount";
+import TotalExpenseCount from "./components/TotalExpenseCount";
 const index = () => {
   return (
     <div className="home">
       <div className="box box1">Box 1</div>
       <div className="box box2">
-        <TotalBillIncome />
+        <TotalIncomeCount />
       </div>
       <div className="box box3">
-        <TotalBillExpense />
+        <TotalExpenseCount />
       </div>
       <div className="box box4">Box 4</div>
       <div className="box box5">Box 5</div>
