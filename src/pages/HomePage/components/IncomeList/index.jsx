@@ -4,6 +4,7 @@ import { billingData } from "src/data";
 import CompanyIcon from "src/components/Icons/CompanyIcon";
 import { LuCalendarClock } from "react-icons/lu";
 import { PiMoney } from "react-icons/pi";
+import { numberFormat } from "src/utils/format";
 
 const IncomeList = () => {
   const [topIncomeData, setTopIncomeData] = useState([]);
@@ -43,7 +44,7 @@ const IncomeList = () => {
             <div className="right">
               <div className="with-iconn">
                 <PiMoney />
-                <p>{bill.amount}</p>
+                <p>{numberFormat(bill.amount)}</p>
               </div>
             </div>
           </div>

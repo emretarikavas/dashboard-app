@@ -4,6 +4,7 @@ import "./pendinglist.scss";
 import CompanyIcon from "src/components/Icons/CompanyIcon";
 import { LuCalendarClock } from "react-icons/lu";
 import { PiMoney } from "react-icons/pi";
+import { numberFormat } from "src/utils/format";
 
 const PendingList = () => {
   const unpaidBills = billingData
@@ -35,7 +36,7 @@ const PendingList = () => {
             <div className="right">
               <div className="with-icon">
                 <PiMoney fill="#8f8bff" />
-                <p>{bill.amount}</p>
+                <p>{numberFormat(bill.amount)}</p>
               </div>
             </div>
           </div>

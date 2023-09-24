@@ -1,22 +1,32 @@
 import { useState, useEffect } from "react";
-import { billingData } from "src/data";
 import "../styles/box.scss";
+import { billingData } from "src/data";
 import { RiBillLine } from "react-icons/ri";
+import { numberFormat } from "src/utils/format";
+
 const index = () => {
-  const [totalIncomeCount, setTotalIncomeCount] = useState(0);
+  const [totalIncomeAmount, setTotalIncomeAmount] = useState(0);
 
   useEffect(() => {
-    const incomeCount = billingData.filter((bill) => bill.status === "Gelir");
-    setTotalIncomeCount(incomeCount.length);
-  });
+    let total = 0;
+    billingData
+      .filter((bill) => bill.status === "Gelir")
+      .forEach((bill) => {
+        total += bill.amount;
+      });
+    setTotalIncomeAmount(total);
+  }, []);
+
   return (
     <div className="boxContainer">
       <div className="titleContainer">
         <RiBillLine />
-        <h2>Toplam Gelir Fatura Sayısı</h2>
+        <h2>Toplam Gelir Fatura Fiyatı</h2>
       </div>
       <div className="countContainer">
-        <h3 className="totalBillingIncome">{totalIncomeCount}</h3>
+        <h3 className="totalBillingIncome">
+          {numberFormat(totalIncomeAmount)}
+        </h3>
         <h6>Fatura Kesildi</h6>
       </div>
       <div className="percentContainer">
