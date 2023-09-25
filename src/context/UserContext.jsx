@@ -5,8 +5,8 @@ export const UserContext = createContext();
 export const UserProvider = ({ children }) => {
   const [department, setDepartment] = useState(null);
   const [dateRange, setDateRange] = useState({
-    startDate: null,
-    endDate: null
+    startDate: new Date(new Date().getFullYear(), new Date().getMonth(), 1),
+    endDate: new Date(new Date().getFullYear(), new Date().getMonth() + 1, 0)
   });
 
   return (
