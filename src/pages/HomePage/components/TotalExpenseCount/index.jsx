@@ -9,6 +9,8 @@ const index = () => {
   const { department, dateRange } = useContext(UserContext);
 
   useEffect(() => {
+    console.log("useEffect ran"); // Bu satırı ekleyin
+
     const expenseCount = billingData.filter(
       (bill) =>
         bill.status === "Gider" &&
