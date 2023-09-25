@@ -5,6 +5,7 @@ import TotalExpenseAmount from "./components/TotalExpenseAmount";
 import TotalIncomeAmount from "./components/TotalIncomeAmount";
 import PendingList from "./components/PendingList";
 import IncomeList from "./components/IncomeList";
+import IncomeBarChart from "./components/IncomeBarChart";
 const index = () => {
   return (
     <div className="home">
@@ -28,7 +29,9 @@ const index = () => {
       </div>
       <div className="box box7">Box 7</div>
       <div className="box box8">Box 8</div>
-      <div className="box box9">Box 9</div>
+      <div className="box box9">
+        <IncomeBarChart />
+      </div>
     </div>
   );
 };
