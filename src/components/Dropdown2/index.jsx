@@ -1,5 +1,4 @@
 import { useState, useContext } from "react";
-
 import { Calendar, DateRangePicker, DefinedRange } from "react-date-range";
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
@@ -11,11 +10,14 @@ export default function index() {
   const { dateRange, setDateRange } = useContext(UserContext);
 
   const handleSelect = (ranges) => {
-    console.log(ranges.selection); // Bu satırı ekleyin
-    setDateRange({
-      startDate: ranges.selection.startDate,
-      endDate: ranges.selection.endDate
-    });
+    if (ranges.range1) {
+      setDateRange({
+        startDate: ranges.range1.startDate,
+        endDate: ranges.range1.endDate
+      });
+    } else {
+      console.error("Unexpected format of ranges object:", ranges);
+    }
   };
   return (
     <div>
