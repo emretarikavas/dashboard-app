@@ -4,9 +4,15 @@ export const UserContext = createContext();
 
 export const UserProvider = ({ children }) => {
   const [department, setDepartment] = useState(null);
+  const [dateRange, setDateRange] = useState({
+    startDate: new Date(),
+    endDate: null
+  });
 
   return (
-    <UserContext.Provider value={{ department, setDepartment }}>
+    <UserContext.Provider
+      value={{ department, setDepartment, dateRange, setDateRange }}
+    >
       {children}
     </UserContext.Provider>
   );

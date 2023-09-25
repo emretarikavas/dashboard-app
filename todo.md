@@ -13,6 +13,6 @@
 [x] //TODO : Box ları çıkart
 [x] //TODO: Her departmana ayrı veriler çıkart
 
+[] //FIXME: usersData da giriş yapan kullanıcı farklı olsa bile ilk kullanıcının bilgileri geliyor
 [] //TODO: Listeleri kendi içinde scroll et
-
 [] //TODO : Sidebar mobile geçtiğinde sadece iconlar gözüksün
