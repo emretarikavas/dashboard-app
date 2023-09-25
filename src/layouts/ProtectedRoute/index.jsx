@@ -1,17 +1,17 @@
-import { useEffect } from "react";
+import { useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
-
+import { UserContext } from "src/context/UserContext";
 import MainLayout from "src/layouts/MainLayout";
 
 function ProtectedRoute({ children }) {
   const navigate = useNavigate();
+  const { department } = useContext(UserContext);
 
   useEffect(() => {
-    const department = localStorage.getItem("department");
     if (!department) {
       navigate("/login");
     }
-  }, [navigate]);
+  }, [navigate, department]);
 
   return <MainLayout>{children}</MainLayout>;
 }

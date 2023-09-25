@@ -1,28 +1,27 @@
 import "./incomelist.scss";
-import React, { useEffect, useState } from "react";
-import { billingData } from "src/data";
+import { useEffect, useState, useContext } from "react";
+import billingDataCopy from "src/data/billingData-copy.json";
 import CompanyIcon from "src/components/Icons/CompanyIcon";
 import { LuCalendarClock } from "react-icons/lu";
 import { PiMoney } from "react-icons/pi";
 import { numberFormat } from "src/utils/format";
-
+import { UserContext } from "src/context/UserContext";
 const IncomeList = () => {
   const [topIncomeData, setTopIncomeData] = useState([]);
-
+  const { department } = useContext(UserContext);
   useEffect(() => {
-    // Gelir olan verileri filtrele
-    const incomeData = billingData.filter((bill) => bill.status === "Gelir");
+    const incomeData = billingDataCopy.filter(
+      (bill) => bill.status === "Gelir" && bill.department === department
+    );
 
-    // Tarihe göre sırala
     incomeData.sort((a, b) => {
       const dateA = new Date(a.date.split(" ").reverse().join("-"));
       const dateB = new Date(b.date.split(" ").reverse().join("-"));
       return dateB - dateA;
     });
 
-    // İlk 20 veriyi al ve state'i güncelle
     setTopIncomeData(incomeData.slice(0, 7));
-  }, []);
+  }, [department]);
 
   return (
     <>
@@ -44,7 +43,7 @@ const IncomeList = () => {
             <div className="right">
               <div className="with-iconn">
                 <PiMoney />
-                <p>{numberFormat(bill.amount)}</p>
+                <p>{bill.amount}</p>
               </div>
             </div>
           </div>

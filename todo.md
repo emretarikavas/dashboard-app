@@ -10,6 +10,9 @@
 [x] //TODO : Billing apisini tekrardan yazdır
 
 [x] //TODO : HomePage genel grid yapısını oluştur
-[] //TODO : Box ları çıkart
-[] //TODO: Her departmana ayrı veriler çıkart
+[x] //TODO : Box ları çıkart
+[x] //TODO: Her departmana ayrı veriler çıkart
+
+[] //TODO: Listeleri kendi içinde scroll et
+
 [] //TODO : Sidebar mobile geçtiğinde sadece iconlar gözüksün

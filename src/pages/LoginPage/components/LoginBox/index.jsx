@@ -3,30 +3,29 @@ import Input from "../../../../components/Input";
 import "./loginBox.scss";
 import { FaUser } from "react-icons/fa";
 import { RiLockPasswordFill } from "react-icons/ri";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { usersData } from "src/data/index";
 import dashboardImg from "src/assets/engineering_team.svg";
+import { UserContext } from "src/context/UserContext";
 const index = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
+  const { department, setDepartment } = useContext(UserContext);
 
   useEffect(() => {
-    const department = localStorage.getItem("department");
     if (department) {
       navigate("/");
     }
-  }, [navigate]);
+  }, [navigate, department]);
 
   const handleLogin = () => {
     const user = usersData.find(
       (user) => user.email === email && user.password === password
     );
     if (user) {
-      localStorage.setItem("department", user.department);
-      localStorage.setItem("email", user.email);
-
+      setDepartment(user.department);
       navigate("/");
     } else {
       /*  */

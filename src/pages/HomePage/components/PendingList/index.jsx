@@ -1,4 +1,5 @@
-import React from "react";
+import { useContext } from "react";
+import { UserContext } from "src/context/UserContext";
 import { billingData } from "src/data";
 import "./pendinglist.scss";
 import CompanyIcon from "src/components/Icons/CompanyIcon";
@@ -7,8 +8,12 @@ import { PiMoney } from "react-icons/pi";
 import { numberFormat } from "src/utils/format";
 
 const PendingList = () => {
+  const { department } = useContext(UserContext);
   const unpaidBills = billingData
-    .filter((bill) => bill.expense_status === "Ödenmedi")
+    .filter(
+      (bill) =>
+        bill.expense_status === "Ödenmedi" && bill.department === department
+    )
     .sort(
       (a, b) =>
         new Date(b.date.split(" ").reverse().join("-")) -

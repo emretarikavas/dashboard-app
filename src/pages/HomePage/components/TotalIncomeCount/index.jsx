@@ -1,14 +1,19 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { billingData } from "src/data";
 import "../styles/box.scss";
 import { RiBillLine } from "react-icons/ri";
+import { UserContext } from "src/context/UserContext";
 const index = () => {
   const [totalIncomeCount, setTotalIncomeCount] = useState(0);
 
+  const { department } = useContext(UserContext);
+
   useEffect(() => {
-    const incomeCount = billingData.filter((bill) => bill.status === "Gelir");
+    const incomeCount = billingData.filter(
+      (bill) => bill.status === "Gelir" && bill.department === department
+    );
     setTotalIncomeCount(incomeCount.length);
-  });
+  }, [department]);
   return (
     <div className="boxContainer">
       <div className="titleContainer">
