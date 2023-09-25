@@ -6,19 +6,23 @@ import { numberFormat } from "src/utils/format";
 import { UserContext } from "src/context/UserContext";
 const index = () => {
   const [totalExpenseAmount, setTotalExpenseAmount] = useState(0);
-  const { department } = useContext(UserContext);
+  const { department, dateRange } = useContext(UserContext);
 
   useEffect(() => {
-    let total = 0;
-    billingData
-      .filter(
-        (bill) => bill.status === "Gider" && bill.department === department
-      )
-      .forEach((bill) => {
-        total += bill.amount;
-      });
+    const total = billingData
+      .filter((bill) => {
+        const billDate = new Date(bill.date);
+        return (
+          bill.status === "Gider" &&
+          bill.department === department &&
+          billDate >= dateRange.startDate &&
+          billDate <= dateRange.endDate
+        );
+      })
+      .reduce((sum, bill) => sum + bill.amount, 0);
+
     setTotalExpenseAmount(total);
-  }, [department]);
+  }, [department, dateRange]);
 
   return (
     <div className="boxContainer">

@@ -8,16 +8,17 @@ const index = () => {
   const [totalExpenseCount, setTotalExpenseCount] = useState(0);
   const { department, dateRange } = useContext(UserContext);
 
-  useEffect(() => {
-    console.log("useEffect ran"); // Bu satırı ekleyin
-
-    const expenseCount = billingData.filter(
-      (bill) =>
-        bill.status === "Gider" &&
-        bill.department === department &&
-        new Date(bill.date) >= dateRange.startDate &&
-        new Date(bill.date) <= dateRange.endDate
+  const isExpenseCountInDateRange = (bill) => {
+    return (
+      bill.status === "Gider" &&
+      bill.department === department &&
+      new Date(bill.date) >= dateRange.startDate &&
+      new Date(bill.date) <= dateRange.endDate
     );
+  };
+
+  useEffect(() => {
+    const expenseCount = billingData.filter(isExpenseCountInDateRange);
     setTotalExpenseCount(expenseCount.length);
   }, [department, dateRange]);
 
