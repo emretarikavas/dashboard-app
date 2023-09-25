@@ -6,14 +6,18 @@ import { UserContext } from "src/context/UserContext";
 
 const index = () => {
   const [totalExpenseCount, setTotalExpenseCount] = useState(0);
-  const { department } = useContext(UserContext);
+  const { department, dateRange } = useContext(UserContext);
 
   useEffect(() => {
     const expenseCount = billingData.filter(
-      (bill) => bill.status === "Gider" && bill.department === department
+      (bill) =>
+        bill.status === "Gider" &&
+        bill.department === department &&
+        new Date(bill.date) >= dateRange.startDate &&
+        new Date(bill.date) <= dateRange.endDate
     );
     setTotalExpenseCount(expenseCount.length);
-  }, [department]);
+  }, [department, dateRange]);
 
   return (
     <div className="boxContainer">

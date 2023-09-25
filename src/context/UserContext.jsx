@@ -6,7 +6,7 @@ export const UserProvider = ({ children }) => {
   const [department, setDepartment] = useState(null);
   const [dateRange, setDateRange] = useState({
     startDate: new Date(),
-    endDate: null
+    endDate: new Date()
   });
 
   return (

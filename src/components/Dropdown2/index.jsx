@@ -11,6 +11,7 @@ export default function index() {
   const { dateRange, setDateRange } = useContext(UserContext);
 
   const handleSelect = (ranges) => {
+    console.log(ranges.selection); // Bu satırı ekleyin
     setDateRange({
       startDate: ranges.selection.startDate,
       endDate: ranges.selection.endDate
@@ -30,6 +31,8 @@ export default function index() {
           ranges={[dateRange]}
           onChange={handleSelect}
           direction="horizontal"
+          minDate={new Date("2020-01-01")}
+          maxDate={new Date()}
         />
       )}
     </div>
