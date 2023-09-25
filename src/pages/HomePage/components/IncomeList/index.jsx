@@ -1,6 +1,6 @@
 import "./incomelist.scss";
 import { useEffect, useState, useContext } from "react";
-import billingDataCopy from "src/data/billingData-copy.json";
+import { billingData } from "src/data";
 import CompanyIcon from "src/components/Icons/CompanyIcon";
 import { LuCalendarClock } from "react-icons/lu";
 import { PiMoney } from "react-icons/pi";
@@ -10,7 +10,7 @@ const IncomeList = () => {
   const [topIncomeData, setTopIncomeData] = useState([]);
   const { department } = useContext(UserContext);
   useEffect(() => {
-    const incomeData = billingDataCopy.filter(
+    const incomeData = billingData.filter(
       (bill) => bill.status === "Gelir" && bill.department === department
     );
 
@@ -43,7 +43,7 @@ const IncomeList = () => {
             <div className="right">
               <div className="with-iconn">
                 <PiMoney />
-                <p>{bill.amount}</p>
+                <p>{numberFormat(bill.amount)}</p>
               </div>
             </div>
           </div>
