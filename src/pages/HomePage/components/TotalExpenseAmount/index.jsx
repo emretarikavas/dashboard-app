@@ -6,29 +6,20 @@ import { numberFormat } from "src/utils/format";
 import { UserContext } from "src/context/UserContext";
 const index = () => {
   const [totalExpenseAmount, setTotalExpenseAmount] = useState(0);
-  const { department, dateRange } = useContext(UserContext);
+
+  const { department, dateRange, calculateTotalAmount } =
+    useContext(UserContext);
 
   useEffect(() => {
-    const total = billingData
-      .filter((bill) => {
-        const billDate = new Date(bill.date);
-        return (
-          bill.status === "Gider" &&
-          bill.department === department &&
-          billDate >= dateRange.startDate &&
-          billDate <= dateRange.endDate
-        );
-      })
-      .reduce((sum, bill) => sum + bill.amount, 0);
-
-    setTotalExpenseAmount(total);
+    const totalExpense = calculateTotalAmount(billingData, "Gider");
+    setTotalExpenseAmount(totalExpense);
   }, [department, dateRange]);
 
   return (
     <div className="boxContainer">
       <div className="titleContainer">
         <RiBillLine />
-        <h2>Toplam Gider Fatura Sayısı</h2>
+        <h2>Toplam Gider Fatura Fiyatı</h2>
       </div>
       <div className="countContainer">
         <h3 className="totalBillingIncome">

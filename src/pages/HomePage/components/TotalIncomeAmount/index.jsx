@@ -7,22 +7,12 @@ import { UserContext } from "src/context/UserContext";
 const index = () => {
   const [totalIncomeAmount, setTotalIncomeAmount] = useState(0);
 
-  const { department, dateRange } = useContext(UserContext);
+  const { department, dateRange, calculateTotalAmount } =
+    useContext(UserContext);
 
   useEffect(() => {
-    const total = billingData
-      .filter((bill) => {
-        const billDate = new Date(bill.date);
-        return (
-          bill.status === "Gelir" &&
-          bill.department === department &&
-          billDate >= dateRange.startDate &&
-          billDate <= dateRange.endDate
-        );
-      })
-      .reduce((sum, bill) => sum + bill.amount, 0);
-
-    setTotalIncomeAmount(total);
+    const totalIncome = calculateTotalAmount(billingData, "Gelir");
+    setTotalIncomeAmount(totalIncome);
   }, [department, dateRange]);
 
   return (

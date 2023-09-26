@@ -6,7 +6,7 @@ import TotalIncomeAmount from "./components/TotalIncomeAmount";
 import PendingList from "./components/PendingList";
 import IncomeList from "./components/IncomeList";
 import IncomeBarChart from "./components/IncomeBarChart";
-import ExpenseBarChart from "./components/ExpenseBarChart";
+import ExpenseBarChart from "./components/ExpenseBarChart ";
 const index = () => {
   return (
     <div className="home">

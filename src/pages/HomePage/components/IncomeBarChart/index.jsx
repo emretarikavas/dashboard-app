@@ -17,7 +17,6 @@ function index() {
     let groupedData = [];
 
     if (diffDays <= 7) {
-      // Group data by day
       const days = [
         "Pazar",
         "Pazartesi",
@@ -44,7 +43,6 @@ function index() {
         });
       }
     } else if (diffDays <= 30) {
-      // Group data by week
       for (let i = 0; i < 4; i++) {
         const weekData = billingData.filter((bill) => {
           const billDate = new Date(bill.date);
@@ -63,7 +61,6 @@ function index() {
         });
       }
     } else {
-      // Group data by month
       const months = [
         "Ocak",
         "Şubat",

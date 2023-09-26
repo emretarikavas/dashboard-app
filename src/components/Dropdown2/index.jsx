@@ -1,6 +1,6 @@
 import "./dropdown2.scss";
 import { useState, useContext } from "react";
-import { DateRange } from "react-date-range";
+import { DateRangePicker } from "react-date-range";
 import { tr } from "react-date-range/dist/locale";
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
@@ -13,11 +13,23 @@ export default function index() {
   const { dateRange, setDateRange } = useContext(UserContext);
 
   const handleSelect = (ranges) => {
-    if (ranges.range1) {
-      setDateRange({
-        startDate: ranges.range1.startDate,
-        endDate: ranges.range1.endDate
-      });
+    if (ranges.selection) {
+      let startDate = ranges.selection.startDate;
+      let endDate = ranges.selection.endDate;
+
+      // If only one date is selected, set the end date to the end of the selected day
+      if (+startDate === +endDate) {
+        endDate = new Date(startDate);
+        endDate.setHours(0, 0, 0, 0);
+      }
+
+      setDateRange([
+        {
+          startDate: startDate,
+          endDate: endDate,
+          key: "selection"
+        }
+      ]);
     } else {
       console.error("Unexpected format of ranges object:", ranges);
     }
@@ -31,11 +43,11 @@ export default function index() {
 
       {open && (
         <div className="dateRange">
-          <DateRange
+          <DateRangePicker
             showSelectionPreview={true}
-            moveRangeOnFirstSelection={true}
+            moveRangeOnFirstSelection={false}
             months={1}
-            ranges={[dateRange]}
+            ranges={dateRange}
             onChange={handleSelect}
             direction="horizontal"
             minDate={new Date("2020-01-01")}

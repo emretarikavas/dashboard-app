@@ -5,7 +5,9 @@
   .dateRange {
     position: absolute;
     right: 30px;
-
+    .rdrDefinedRangesWrapper {
+      display: none;
+    }
     .rdrDateDisplayWrapper {
       background-color: $dark-box-bg;
     }

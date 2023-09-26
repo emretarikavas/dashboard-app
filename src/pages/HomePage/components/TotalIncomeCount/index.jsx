@@ -6,19 +6,12 @@ import { UserContext } from "src/context/UserContext";
 const index = () => {
   const [totalIncomeCount, setTotalIncomeCount] = useState(0);
 
-  const { department, dateRange } = useContext(UserContext);
-
-  const isExpenseInDateRange = (bill) => {
-    return (
-      bill.status === "Gelir" &&
-      bill.department === department &&
-      new Date(bill.date) >= dateRange.startDate &&
-      new Date(bill.date) <= dateRange.endDate
-    );
-  };
+  const { department, dateRange, isCountInDateRange } = useContext(UserContext);
 
   useEffect(() => {
-    const incomeCount = billingData.filter(isExpenseInDateRange);
+    const incomeCount = billingData.filter((bill) =>
+      isCountInDateRange(bill, "Gelir")
+    );
     setTotalIncomeCount(incomeCount.length);
   }, [department, dateRange]);
   return (
