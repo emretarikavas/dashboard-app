@@ -8,29 +8,31 @@ import { useNavigate } from "react-router-dom";
 import { usersData } from "src/data/index";
 import dashboardImg from "src/assets/engineering_team.svg";
 import { UserContext } from "src/context/UserContext";
-const index = () => {
+
+const LoginBox = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
-  const { department, setDepartment } = useContext(UserContext);
+  const { userId, setUserId } = useContext(UserContext);
 
-  useEffect(() => {
-    if (department) {
-      navigate("/");
-    }
-  }, [navigate, department]);
-
-  const handleLogin = () => {
+  const handleLogin = (e) => {
+    e.preventDefault();
     const user = usersData.find(
       (user) => user.email === email && user.password === password
     );
     if (user) {
-      setDepartment(user.department);
+      setUserId(user.id);
       navigate("/");
     } else {
       /*  */
     }
   };
+
+  useEffect(() => {
+    if (userId) {
+      navigate("/");
+    }
+  }, []);
 
   return (
     <form onSubmit={handleLogin} className="loginBox">
@@ -70,4 +72,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default LoginBox;

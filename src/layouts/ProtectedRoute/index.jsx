@@ -10,8 +10,10 @@ function ProtectedRoute({ children }) {
   useEffect(() => {
     if (!department) {
       navigate("/login");
+    } else {
+      navigate("/");
     }
-  }, [navigate, department]);
+  }, []);
 
   return <MainLayout>{children}</MainLayout>;
 }

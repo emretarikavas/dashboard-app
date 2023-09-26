@@ -4,10 +4,16 @@ export const UserContext = createContext();
 
 export const UserProvider = ({ children }) => {
   const [department, setDepartment] = useState(null);
+  const [userId, setUserId] = useState(null);
+
+  const today = new Date();
+  const month = today.getMonth();
+  const year = today.getFullYear();
+
   const [dateRange, setDateRange] = useState([
     {
-      startDate: new Date(new Date().getFullYear(), new Date().getMonth(), 1),
-      endDate: new Date(new Date().getFullYear(), new Date().getMonth() + 1, 0),
+      startDate: new Date(year, month, 1),
+      endDate: new Date(year, month + 1, 0),
       key: "selection"
     }
   ]);
@@ -45,6 +51,8 @@ export const UserProvider = ({ children }) => {
   return (
     <UserContext.Provider
       value={{
+        userId,
+        setUserId,
         department,
         setDepartment,
         dateRange,

@@ -1,12 +1,12 @@
 import "./navProfile.scss";
-import { usersData } from "src/data/index";
 import { useContext } from "react";
 import { UserContext } from "src/context/UserContext";
+import { usersData } from "src/data/index";
 
 function Index() {
-  const { department } = useContext(UserContext);
+  const { userId } = useContext(UserContext);
 
-  const loggedInUser = usersData.find((user) => user.department === department);
+  const loggedInUser = usersData.find((user) => user.id === userId);
 
   if (loggedInUser) {
     const name = `${loggedInUser.first_name}+${loggedInUser.last_name}`;
