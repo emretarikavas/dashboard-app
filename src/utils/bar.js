@@ -98,6 +98,7 @@ function index() {
       date,
       amount
     }));
+
     setData(dataArray);
   }, [dateRange, department]);
 
