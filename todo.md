@@ -17,3 +17,4 @@
 [] //TODO: Calendar'a animasyon ekle
 [] //TODO: Listeleri kendi içinde scroll et
 [] //TODO : Sidebar mobile geçtiğinde sadece iconlar gözüksün
+[] //TODO: dropdownlara Outside click ekle
