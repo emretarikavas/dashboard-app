@@ -5,10 +5,10 @@ import MainLayout from "src/layouts/MainLayout";
 
 function ProtectedRoute({ children }) {
   const navigate = useNavigate();
-  const { department } = useContext(UserContext);
+  const { userId, department } = useContext(UserContext);
 
   useEffect(() => {
-    if (!department) {
+    if (!userId) {
       navigate("/login");
     } else {
       navigate("/");

@@ -24,7 +24,7 @@ const LoginBox = () => {
       setUserId(user.id);
       navigate("/");
     } else {
-      /*  */
+      console.log("HATA");
     }
   };
 
@@ -32,7 +32,7 @@ const LoginBox = () => {
     if (userId) {
       navigate("/");
     }
-  }, []);
+  }, [userId]);
 
   return (
     <form onSubmit={handleLogin} className="loginBox">
