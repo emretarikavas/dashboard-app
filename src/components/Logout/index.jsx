@@ -6,9 +6,10 @@ import NavButton from "../NavButton";
 
 function Logout() {
   const navigate = useNavigate();
-  const { setDepartment } = useContext(UserContext);
+  const { setDepartment, setUserId } = useContext(UserContext);
 
   function handleLogout() {
+    setUserId(null);
     setDepartment(null);
     navigate("/login");
   }

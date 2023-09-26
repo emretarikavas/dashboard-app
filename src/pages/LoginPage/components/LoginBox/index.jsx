@@ -13,7 +13,7 @@ const LoginBox = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
-  const { userId, setUserId } = useContext(UserContext);
+  const { userId, setUserId, setDepartment } = useContext(UserContext);
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -22,6 +22,7 @@ const LoginBox = () => {
     );
     if (user) {
       setUserId(user.id);
+      setDepartment(user.department); // Kullanıcının department'ini set edin
       navigate("/");
     } else {
       console.log("HATA");
