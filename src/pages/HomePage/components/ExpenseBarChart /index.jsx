@@ -1,5 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { Bar, BarChart, ResponsiveContainer, Tooltip, XAxis } from "recharts";
+import CustomizeAxisTicks from "../CustomizeAxisTicks";
 import "./expenseBarChart.scss";
 import { billingData } from "src/data";
 import { UserContext } from "src/context/UserContext";
@@ -102,13 +103,16 @@ function index() {
   }, [dateRange, department]);
 
   return (
-    <ResponsiveContainer width="100%" height={300}>
-      <BarChart data={data}>
-        <XAxis dataKey="date" />
-        <Tooltip />
-        <Bar dataKey="amount" fill="#8884d8" />
-      </BarChart>
-    </ResponsiveContainer>
+    <>
+      <h1>Gider Grafiği</h1>
+      <ResponsiveContainer width="100%" height={300}>
+        <BarChart data={data}>
+          <XAxis dataKey="date" interval={0} tick={<CustomizeAxisTicks />} />
+          <Tooltip formatter={(value) => [`Fiyat: ${value} ₺`]} />
+          <Bar dataKey="amount" fill="#8884d8" />
+        </BarChart>
+      </ResponsiveContainer>
+    </>
   );
 }
 
