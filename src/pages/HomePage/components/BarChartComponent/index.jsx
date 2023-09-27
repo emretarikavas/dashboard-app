@@ -1,11 +1,11 @@
 import { useContext, useEffect, useState } from "react";
 import { Bar, BarChart, ResponsiveContainer, Tooltip, XAxis } from "recharts";
 import CustomizeAxisTicks from "../CustomizeAxisTicks";
-import "./expenseBarChart.scss";
+import "./barChartComponent.scss";
 import { billingData } from "src/data";
 import { UserContext } from "src/context/UserContext";
 
-function index() {
+function index({ status }) {
   const { dateRange, department } = useContext(UserContext);
   const [data, setData] = useState([]);
 
@@ -34,7 +34,8 @@ function index() {
         if (
           date >= startDate &&
           date <= endDate &&
-          item.department === department
+          item.department === department &&
+          item.status === status
         ) {
           const dayOfWeek = daysOfWeek[date.getDay()];
           groupedData[dayOfWeek] += item.amount;
@@ -54,7 +55,8 @@ function index() {
         if (
           date >= startDate &&
           date <= endDate &&
-          item.department === department
+          item.department === department &&
+          item.status === status
         ) {
           const weekOfMonth = Math.ceil(date.getDate() / 7);
           groupedData[`${weekOfMonth}. Hafta`] += item.amount;
@@ -86,7 +88,8 @@ function index() {
         if (
           date >= startDate &&
           date <= endDate &&
-          item.department === department
+          item.department === department &&
+          item.status === status
         ) {
           const monthOfYear = monthsOfYear[date.getMonth()];
           groupedData[monthOfYear] += item.amount;
@@ -100,16 +103,24 @@ function index() {
       amount
     }));
     setData(dataArray);
-  }, [dateRange, department]);
+  }, [dateRange, department, status]);
 
   return (
     <>
-      <h1>Gider Grafiği</h1>
+      <h1
+        className="title"
+        style={{ color: status === "Gelir" ? "#ff8042" : "#8884d8" }}
+      >
+        {status === "Gelir" ? "Gelir Grafiği" : "Gider Grafiği"}
+      </h1>
       <ResponsiveContainer width="100%" height={300}>
         <BarChart data={data}>
           <XAxis dataKey="date" interval={0} tick={<CustomizeAxisTicks />} />
           <Tooltip formatter={(value) => [`Fiyat: ${value} ₺`]} />
-          <Bar dataKey="amount" fill="#8884d8" />
+          <Bar
+            dataKey="amount"
+            fill={status === "Gelir" ? "#ff8042" : "#8884d8"}
+          />
         </BarChart>
       </ResponsiveContainer>
     </>
