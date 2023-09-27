@@ -8,7 +8,7 @@ export default function index() {
   return (
     <div className="dropdownContainer">
       <button onClick={() => setOpen(!open)} className="Btn dropdownButton">
-        <DropdownIcon />
+        <DropdownIcon size={28} />
       </button>
 
       {

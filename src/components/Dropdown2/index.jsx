@@ -17,7 +17,6 @@ export default function index() {
       let startDate = ranges.selection.startDate;
       let endDate = ranges.selection.endDate;
 
-      // If only one date is selected, set the end date to the end of the selected day
       if (+startDate === +endDate) {
         endDate = new Date(startDate);
         endDate.setHours(0, 0, 0, 0);
@@ -38,7 +37,7 @@ export default function index() {
   return (
     <div className="dateRangeContainer">
       <NavButton onClick={() => setOpen(!open)}>
-        <DropdownIcon />
+        <DropdownIcon size={28} />
       </NavButton>
 
       {open && (
