@@ -17,7 +17,6 @@ function index({ status }) {
     let groupedData = {};
 
     if (diffDays <= 7) {
-      // If dateRange is 7 days or less, show data for each day of the week
       const daysOfWeek = [
         "Pazartesi",
         "Salı",
@@ -42,7 +41,6 @@ function index({ status }) {
         }
       });
     } else if (diffDays <= 30) {
-      // If dateRange is more than 7 days but less than or equal to 30 days, show data for each week
       groupedData = {
         "1. Hafta": 0,
         "2. Hafta": 0,
@@ -63,7 +61,6 @@ function index({ status }) {
         }
       });
     } else {
-      // If dateRange is more than 30 days, show data for each month
       const monthsOfYear = [
         "Ocak",
         "Şubat",
@@ -97,7 +94,6 @@ function index({ status }) {
       });
     }
 
-    // Convert the grouped data to an array of objects, each containing a date and an amount
     const dataArray = Object.entries(groupedData).map(([date, amount]) => ({
       date,
       amount
