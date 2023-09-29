@@ -78,5 +78,13 @@
     "email": "gizem@example.com",
     "password": "123123",
     "department": "Satış"
+  },
+  {
+    "id": 11,
+    "first_name": "Serhat",
+    "last_name": "Fırıncı",
+    "email": "serhat@example.com",
+    "password": "123123",
+    "department": "Müdür"
   }
 ]
