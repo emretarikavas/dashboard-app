@@ -19,10 +19,24 @@
 [] //TODO: Sidebar mobile geçtiğinde sadece iconlar gözüksün
 [] //TODO: dropdownlara Outside click ekle
 
-HomePage2 sayfamdaki DropdownBox bileşenimde senden yapmanı istediğim şeyler var
+TotalBox bileşenimde senden şunları yapmanı istiyorum
 
-ilk olarak departmanları listelemeni istiyorum. children.title a Departman children.content de bir menü açılsın eğer kullanıcının giriş yaptığı departman eğer Müdür ise diğer departmanların verilerine ulaşabilsin değilse giriş yapan kullanıcı sadece kendi departmanına ulaşabilsin
+1. kullanıcı hangi departmanla giriş yaptıysa billingData.json da o departmana ait verileri baz al müdür hariç
 
-2. olarak istediğim children.title da Dönem yazsın. children.content de Tarih aralığı seç yazsın menü açıldığında ise son 7 gün, son 30 gün ve son 1 yıl olarak listelensin ve tıkladığında veriler ona göre güncellensin
+2. giriş yapan kullanıcı eğer müdür ise bilingdata.json dosyasındaki tüm verileri baz al
 
-bu iki isteğimi tek bileşen halinde yap prop lar ile göndereyim contextlerimi kontrol etmeyi unutma. UsersData ve BillingData json dosyalarıma göre haraket et. son olarak DropdownBox bileşenini select option şeklinde yapma divler ile yap çünkü ben stillendirmek istiyorum
+3. billingData.json dosyasındaki status durumu gelir ise componenti dediklerime göre güncelle tabii ki bunları billingData.json dosyasındaki department bilgisine bakarak yap
+
+- h3 de Toplam Kesilen Fatura yazsın
+- yine IncomeIcon bileşeni kullanılsın
+- h5 de status bilgisi gelir olan tüm faturaların amount verisinin toplamını al ve utils içindeki format fonksiyonundan geçir
+  -h6 da ise status bilgisi gelir olan faturaların toplamını yaz
+
+4. billingData.json dosyasındaki status durumu gider ise componenti dediklerime göre güncelle tabii ki bunları billingData.json dosyasındaki department bilgisine bakarak yap
+
+- h3 de Toplam Ödenen Fatura yazsın
+- IncomeIcon yerine ExpenseIcon bileşeni kullanılsın
+- h5 de status bilgisi gider ama expense_status bilgisi Ödendi olan tüm faturaların amount verisinin toplamını al ve utils içindeki format fonksiyonundan geçir
+  -h6 da ise status bilgisi gider olan ama expense_status bilgisi Ödendi olan faturaların toplamını yaz
+
+bunun verilerini sadece dışardan prop vererek değiştirmek istiyorum bileşeni ona göre hazırla

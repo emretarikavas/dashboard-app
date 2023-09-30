@@ -14,8 +14,8 @@ const index = () => {
       </div>
 
       <main className="main">
-        <TotalBox />
-        <TotalBox />
+        <TotalBox status="Gelir" />
+        <TotalBox status="Gider" />
       </main>
     </header>
   );
