@@ -19,12 +19,10 @@
 [] //TODO: Sidebar mobile geçtiğinde sadece iconlar gözüksün
 [] //TODO: dropdownlara Outside click ekle
 
-dropdown 3 bileşenimde şöyle bir şey yapmanı istiyorum
+HomePage2 sayfamdaki DropdownBox bileşenimde senden yapmanı istediğim şeyler var
 
-1. bütün departmanları listele ve hepsi diye ekstra bir eleman ekle
+ilk olarak departmanları listelemeni istiyorum. children.title a Departman children.content de bir menü açılsın eğer kullanıcının giriş yaptığı departman eğer Müdür ise diğer departmanların verilerine ulaşabilsin değilse giriş yapan kullanıcı sadece kendi departmanına ulaşabilsin
 
-2. giriş yapan kullanıcının departman bilgisi Müdür ise listelenen departmanlardan herhangi birine tıkladığında o departmanın bilgilerini görsün ve anasayfa güncellensin o bilgilere göre
+2. olarak istediğim children.title da Dönem yazsın. children.content de Tarih aralığı seç yazsın menü açıldığında ise son 7 gün, son 30 gün ve son 1 yıl olarak listelensin ve tıkladığında veriler ona göre güncellensin
 
-3. hepsi yazan elemanda tüm departmanların toplam bilgisi gözüksün yani aslında billingData.json un tamamını baz alsın ve müdür giriş yaptığında varsayılan olarak hepsi elemanı seçili olsun
-
-4. giriş yapan kullanıcının departman bilgisi müdür değilse sadece kendi departmanına ait bilgileri görüntüleyebilsin başka departmanlara erişim sağlayamasın tıklayamasın ve yanında bir kilit işareti olsun
+bu iki isteğimi tek bileşen halinde yap prop lar ile göndereyim contextlerimi kontrol etmeyi unutma. UsersData ve BillingData json dosyalarıma göre haraket et. son olarak DropdownBox bileşenini select option şeklinde yapma divler ile yap çünkü ben stillendirmek istiyorum

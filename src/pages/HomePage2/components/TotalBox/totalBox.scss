@@ -1,0 +1,33 @@
+.totalBox {
+  padding: 36px;
+  border-radius: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 1px rgba(198, 196, 196, 0.5);
+
+  .totalBoxHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 54px;
+
+    h3 {
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+
+  .totalBoxContent {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    h5 {
+      font-size: 36px;
+      color: #204cc4;
+      line-height: 24px;
+    }
+    h6 {
+      font-size: 24px;
+      color: #666768;
+      line-height: 24px;
+    }
+  }
+}

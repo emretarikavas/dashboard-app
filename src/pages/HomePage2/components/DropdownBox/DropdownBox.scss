@@ -1,12 +1,14 @@
 .dropdown {
   background: #ffffff;
-  border-radius: 8px;
+  border-radius: 6px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 9px 12px;
-  width: 100%;
+  width: 300px;
+  position: relative;
 
-  .left {
+  .title {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,6 +23,24 @@
       font-size: 16px;
       color: #3f3f3f;
       line-height: 22px;
+    }
+  }
+
+  .content {
+    width: 100%;
+    background: #ffffff;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    left: 0;
+
+    li {
+      width: 100%;
+      padding: 9px 12px;
+      cursor: pointer;
     }
   }
 }
