@@ -1,0 +1,26 @@
+.dropdown {
+  background: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 9px 12px;
+  width: 100%;
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+
+    h3 {
+      font-size: 14px;
+      color: #666768;
+      line-height: 16px;
+    }
+    h5 {
+      font-size: 16px;
+      color: #3f3f3f;
+      line-height: 22px;
+    }
+  }
+}

@@ -1,7 +1,10 @@
-import React from "react";
-
+import DropdownBox from "./components/DropdownBox";
 const index = () => {
-  return <div>index</div>;
+  return (
+    <div>
+      <DropdownBox />
+    </div>
+  );
 };
 
 export default index;

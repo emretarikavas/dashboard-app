@@ -1,8 +1,7 @@
-import "./sidebar.scss";
+import "./sidebar2.scss";
 import { NavLink } from "react-router-dom";
-import { HiOutlineHome, HiHome, HiUsers, HiOutlineUsers } from "react-icons/hi";
-import { IoReceiptOutline, IoReceiptSharp } from "react-icons/io5";
 import { useState } from "react";
+import cn from "classnames";
 import HomeIcon from "src/components/Icons/HomeIcon";
 import BillIcon from "src/components/Icons/BillIcon";
 import UserIcon from "src/components/Icons/UserIcon";
@@ -36,7 +35,11 @@ function index() {
       {sideBarData.map((data) => (
         <NavLink to={data.to} onClick={() => setActiveLink(data.to)}>
           <div className="sidebarItemContainer">
-            <div className="sidebarItem">
+            <div
+              className={cn("sidebarItem", {
+                activeLink: activeLink === data.to
+              })}
+            >
               {data.icon}
               <span>{data.text}</span>
             </div>
