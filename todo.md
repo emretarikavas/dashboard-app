@@ -18,3 +18,13 @@
 [] //TODO: Listeleri kendi içinde scroll et
 [] //TODO: Sidebar mobile geçtiğinde sadece iconlar gözüksün
 [] //TODO: dropdownlara Outside click ekle
+
+dropdown 3 bileşenimde şöyle bir şey yapmanı istiyorum
+
+1. bütün departmanları listele ve hepsi diye ekstra bir eleman ekle
+
+2. giriş yapan kullanıcının departman bilgisi Müdür ise listelenen departmanlardan herhangi birine tıkladığında o departmanın bilgilerini görsün ve anasayfa güncellensin o bilgilere göre
+
+3. hepsi yazan elemanda tüm departmanların toplam bilgisi gözüksün yani aslında billingData.json un tamamını baz alsın ve müdür giriş yaptığında varsayılan olarak hepsi elemanı seçili olsun
+
+4. giriş yapan kullanıcının departman bilgisi müdür değilse sadece kendi departmanına ait bilgileri görüntüleyebilsin başka departmanlara erişim sağlayamasın tıklayamasın ve yanında bir kilit işareti olsun

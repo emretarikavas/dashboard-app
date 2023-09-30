@@ -1,0 +1,16 @@
+.navbar {
+  width: 100%;
+  padding: 24px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(266deg, #4383e4 0%, #204cc4 100%);
+  box-shadow: 0 0 3px 2px rgba(204, 203, 203, 0.38);
+
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+  }
+}
