@@ -1,5 +1,5 @@
 .homePage {
-  width: 100%;
+  width: calc(100% - 280px);
   padding: 36px;
 
   .header {
@@ -13,6 +13,13 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    margin-bottom: 36px;
+  }
+
+  .lineChartContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     margin-bottom: 36px;
   }
 

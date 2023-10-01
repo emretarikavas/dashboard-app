@@ -11,4 +11,11 @@
 
 [] //FIXME: Müdür olarak giriş yaptığında sorun var
 [] //FIXME: Dropdown lara kapanma animasyonu ekle
-homePage2 sayfasında 3 tane DropdownBox bileşenim var biri departman için biri dönem için biri de DateRangePicker için DropdownBox bileşenimde genel olarak açıldıktan sonra bir seçeneği seçtiğimde otomatik olarak kapanıyor departman ve dönem için bir problem değil ama DateRangePicker da problem oluyor ben takvimde belli bir tarih seçemiyorum çünkü hemen kapanıyor
+
+senden bir gelir gider çizgi grafiği oluşturmanı istiyorum kütüphane olarak recharts kullanıyorum
+
+1. grafiğin altında noktalar olsun noktaların altında da türkçe olarak günler yazsın ama kısaltmalı olarak yani mesela 29 eyl gibi
+
+2. olarak ben bu grafiği DropdownBox bileşenimdeki Tarih Aralığı Seç ve DatePicker üzerinden kontrol edebileyim ama ayrıca kaydıradabileyim bunun için context lerime bakman gerekecek
+
+3. olarak hangi günün üzerindeysem toplam gelir ve toplam gider bilgileri yazsın tabii ki bu verileri billingData.json dosyamdaki verilerden alacaksın department bilgisine göre

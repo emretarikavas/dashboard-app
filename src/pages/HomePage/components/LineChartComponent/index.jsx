@@ -2,7 +2,21 @@ import { useContext, useEffect, useState } from "react";
 import { Line, LineChart, ResponsiveContainer, Tooltip, XAxis } from "recharts";
 import CustomizeAxisTicks from "../CustomizeAxisTicks";
 import { billingData } from "src/data";
+import { numberFormat } from "src/utils/format";
 import { UserContext } from "src/context/UserContext";
+import "./lineChartComponent.scss";
+
+function CustomTooltip({ payload, label, active }) {
+  if (active && payload && payload.length) {
+    return (
+      <div className="custom-tooltip">
+        <p className="label">{`Tarih : ${label}`}</p>
+        <p className="income">{`Gelir : ${numberFormat(payload[0].value)}`}</p>
+        <p className="expense">{`Gider : ${numberFormat(payload[1].value)}`}</p>
+      </div>
+    );
+  }
+}
 
 function LineChartComponent() {
   const { dateRange, department } = useContext(UserContext);
@@ -10,8 +24,12 @@ function LineChartComponent() {
 
   useEffect(() => {
     const startDate = dateRange[0].startDate;
-    const endDate = dateRange[0].endDate;
-    const diffDays = Math.ceil((endDate - startDate) / (1000 * 60 * 60 * 24));
+    let endDate = new Date(dateRange[0].endDate);
+    endDate.setHours(23, 59, 59, 999);
+    const diffDays =
+      Math.ceil(
+        (endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24)
+      ) + 1;
 
     let groupedData = {};
 
@@ -101,22 +119,36 @@ function LineChartComponent() {
   }, [dateRange, department]);
 
   return (
-    <>
-      <h1 className="title">Gelir ve Gider Grafiği</h1>
+    <div className="chartContainer">
+      <h1 className="title">Gelir/Gider Grafiği</h1>
       <ResponsiveContainer width="100%" height={300}>
-        <LineChart data={data}>
-          <XAxis dataKey="date" interval={0} tick={<CustomizeAxisTicks />} />
-          <Tooltip
-            formatter={(value, name) => [
-              `${name}: ${value} ₺`,
-              "Tarih: " + name
-            ]}
+        <LineChart
+          data={data}
+          margin={{ top: 5, right: 20, bottom: 20, left: 20 }}
+        >
+          <XAxis
+            dataKey="date"
+            interval={0}
+            domain={["auto", "auto"]}
+            height={60}
+            angle={-20}
           />
-          <Line type="monotone" dataKey="Gelir" stroke="#ff8042" />
-          <Line type="monotone" dataKey="Gider" stroke="#8884d8" />
+          <Tooltip content={<CustomTooltip />} />
+          <Line
+            type="monotone"
+            dataKey="Gelir"
+            stroke="#6cd894"
+            dot={<circle r={5} />}
+          />
+          <Line
+            type="monotone"
+            dataKey="Gider"
+            stroke="#ee575d"
+            dot={<circle r={5} />}
+          />
         </LineChart>
       </ResponsiveContainer>
-    </>
+    </div>
   );
 }
 

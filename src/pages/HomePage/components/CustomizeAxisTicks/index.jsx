@@ -4,9 +4,9 @@ export default function index(props) {
   return (
     <g transform={`translate(${x},${y})`}>
       <text
-        x={-5}
+        x={0}
         y={2}
-        dy={10}
+        dy={16}
         textAnchor="middle"
         fill="#666"
         transform="rotate(-30)"

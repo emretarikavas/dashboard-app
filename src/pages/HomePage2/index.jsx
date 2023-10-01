@@ -4,6 +4,7 @@ import { useContext } from "react";
 import BarChartComponent from "src/pages/HomePage/components/BarChartComponent";
 import DropdownBox from "./components/DropdownBox";
 import TotalBox from "./components/TotalBox";
+import LineChartComponent from "../HomePage/components/LineChartComponent";
 const index = () => {
   const { dateRange } = useContext(UserContext);
   const startDate = dateRange[0].startDate.toLocaleDateString("tr-TR", {
@@ -36,7 +37,9 @@ const index = () => {
         <TotalBox status="Gider" expenseStatus="Ödenmedi" />
         <TotalBox status="Gider" expenseStatus="Ödendi" />
       </main>
-
+      <section className="lineChartContainer">
+        <LineChartComponent />
+      </section>
       <section className="barChartsContainers">
         <BarChartComponent status="Gelir" />
         <BarChartComponent status="Gider" />
