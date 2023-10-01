@@ -1,4 +1,4 @@
-import { useState, useContext } from "react";
+import { useState, useEffect, useContext } from "react";
 import { UserContext } from "src/context/UserContext";
 import usersData from "src/data/usersData.json";
 import cn from "classnames";
@@ -14,8 +14,24 @@ import DownIcon from "src/components/Icons/DownIcon";
 const index = ({ title, initialContent }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [content, setContent] = useState(initialContent);
+  const [date, setDate] = useState(null);
+
   const { userRole, department, dateRange, setDateRange } =
     useContext(UserContext);
+
+  useEffect(() => {
+    const closeDropdown = (e) => {
+      if (!e.target.closest(".dropdown")) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("click", closeDropdown);
+
+    return () => {
+      document.removeEventListener("click", closeDropdown);
+    };
+  }, []);
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -44,9 +60,8 @@ const index = ({ title, initialContent }) => {
       setContent(
         `${ranges.selection.startDate.toLocaleDateString()} - ${ranges.selection.endDate.toLocaleDateString()}`
       );
-    } else {
-      console.error("Unexpected format of ranges object:", ranges);
     }
+    setIsOpen(true);
   };
 
   const renderDateRanges = () => {
@@ -109,6 +124,8 @@ const index = ({ title, initialContent }) => {
             minDate={new Date("2020-01-01")}
             maxDate={new Date()}
             locale={tr}
+            date={date}
+            onClick={(e) => e.stopPropagation()}
           />
         </div>
       )}
