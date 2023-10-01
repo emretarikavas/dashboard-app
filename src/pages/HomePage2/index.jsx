@@ -15,7 +15,8 @@ const index = () => {
 
       <main className="main">
         <TotalBox status="Gelir" />
-        <TotalBox status="Gider" />
+        <TotalBox status="Gider" expenseStatus="Ödenmedi" />
+        <TotalBox status="Gider" expenseStatus="Ödendi" />
       </main>
     </header>
   );
