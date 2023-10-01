@@ -1,6 +1,7 @@
+import "./homePage2.scss";
+import BarChartComponent from "src/pages/HomePage/components/BarChartComponent";
 import DropdownBox from "./components/DropdownBox";
 import TotalBox from "./components/TotalBox";
-import "./homePage2.scss";
 const index = () => {
   return (
     <header className="homePage">
@@ -18,6 +19,11 @@ const index = () => {
         <TotalBox status="Gider" expenseStatus="Ödenmedi" />
         <TotalBox status="Gider" expenseStatus="Ödendi" />
       </main>
+
+      <section className="barChartsContainers">
+        <BarChartComponent status="Gelir" />
+        <BarChartComponent status="Gider" />
+      </section>
     </header>
   );
 };

@@ -102,11 +102,8 @@ function index({ status }) {
   }, [dateRange, department, status]);
 
   return (
-    <>
-      <h1
-        className="title"
-        style={{ color: status === "Gelir" ? "#ff8042" : "#8884d8" }}
-      >
+    <div className="chartContainer">
+      <h1 className="title">
         {status === "Gelir" ? "Gelir Grafiği" : "Gider Grafiği"}
       </h1>
       <ResponsiveContainer width="100%" height={300}>
@@ -119,7 +116,7 @@ function index({ status }) {
           />
         </BarChart>
       </ResponsiveContainer>
-    </>
+    </div>
   );
 }
 

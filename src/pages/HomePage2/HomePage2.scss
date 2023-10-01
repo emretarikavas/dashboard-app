@@ -1,18 +1,24 @@
 .homePage {
   width: 100%;
-  padding: 36px 54px;
+  padding: 36px;
 
   .header {
     display: flex;
     gap: 24px;
     align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
   }
 
   .main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    flex-direction: column;
+    margin-bottom: 36px;
+  }
+
+  .barChartsContainers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
   }
 }
