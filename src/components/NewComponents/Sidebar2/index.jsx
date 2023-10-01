@@ -32,8 +32,8 @@ function index() {
 
   return (
     <aside className="sidebar">
-      {sideBarData.map((data) => (
-        <NavLink to={data.to} onClick={() => setActiveLink(data.to)}>
+      {sideBarData.map((data, i) => (
+        <NavLink key={i} to={data.to} onClick={() => setActiveLink(data.to)}>
           <div className="sidebarItemContainer">
             <div
               className={cn("sidebarItem", {

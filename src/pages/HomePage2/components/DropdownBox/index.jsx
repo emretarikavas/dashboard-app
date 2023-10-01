@@ -10,6 +10,7 @@ import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
 import { tr } from "react-date-range/dist/locale";
 import DownIcon from "src/components/Icons/DownIcon";
+import { FaLock } from "react-icons/fa";
 
 const index = ({ title, initialContent }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,9 +48,7 @@ const index = ({ title, initialContent }) => {
         })}
       >
         {dep}
-        {userRole !== "Müdür" && department !== dep && (
-          <span className="lock-icon">🔒</span>
-        )}
+        {userRole !== "Müdür" && department !== dep && <FaLock />}
       </li>
     ));
   };
@@ -61,7 +60,6 @@ const index = ({ title, initialContent }) => {
         `${ranges.selection.startDate.toLocaleDateString()} - ${ranges.selection.endDate.toLocaleDateString()}`
       );
     }
-    setIsOpen(true);
   };
 
   const renderDateRanges = () => {
@@ -94,7 +92,10 @@ const index = ({ title, initialContent }) => {
   };
 
   return (
-    <div className="dropdown" onClick={toggleDropdown}>
+    <div
+      className={`dropdown ${isOpen ? "open" : ""}`}
+      onClick={toggleDropdown}
+    >
       <div className="title">
         <h3>{title}</h3>
         <h5>{initialContent}</h5>
@@ -102,20 +103,21 @@ const index = ({ title, initialContent }) => {
 
       {title === "Tarih Aralığı" ? <CalendarIcon /> : <DownIcon />}
       {isOpen && title !== "Tarih Aralığı" && (
-        <ul className="content">
-          <li>
-            {title === "Departman"
-              ? renderDepartments()
-              : title === "Dönem"
-              ? renderDateRanges()
-              : null}
-          </li>
+        <ul className={`content ${isOpen ? "open" : ""}`}>
+          {title === "Departman"
+            ? renderDepartments()
+            : title === "Dönem"
+            ? renderDateRanges()
+            : null}
         </ul>
       )}
       {title === "Tarih Aralığı" && isOpen && (
-        <div className="datePicker">
+        <div
+          className={`datePicker ${isOpen ? "open" : ""}`}
+          onClick={(e) => e.stopPropagation()}
+        >
           <DateRangePicker
-            showSelectionPreview={true}
+            showSelectionPreview={false}
             moveRangeOnFirstSelection={false}
             months={1}
             ranges={dateRange}
@@ -124,8 +126,7 @@ const index = ({ title, initialContent }) => {
             minDate={new Date("2020-01-01")}
             maxDate={new Date()}
             locale={tr}
-            date={date}
-            onClick={(e) => e.stopPropagation()}
+            rangeColors={["#204cc4"]}
           />
         </div>
       )}

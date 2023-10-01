@@ -11,15 +11,15 @@ const HomeIcon = () => {
       <g
         id="Page-1"
         stroke="none"
-        strokewidth="{1}"
+        strokeWidth="{1}"
         fill="none"
-        fillrule="evenodd"
+        fillRule="evenodd"
       >
         <g
           id="Extra-Large"
           transform="translate(-40, -175)"
           fill="currentColor"
-          fillrule="nonzero"
+          fillRule="nonzero"
         >
           <g id="home-3" transform="translate(40, 175)">
             <path

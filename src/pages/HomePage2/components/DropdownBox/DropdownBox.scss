@@ -7,6 +7,7 @@
   padding: 9px 12px;
   width: 300px;
   position: relative;
+  cursor: pointer;
 
   .title {
     display: flex;
@@ -36,16 +37,72 @@
     position: absolute;
     top: calc(100% + 0.5rem);
     left: 0;
+    box-shadow: 0 2px 4px 1px rgba(198, 196, 196, 0.5);
 
     li {
       width: 100%;
       padding: 9px 12px;
       cursor: pointer;
     }
+    .department-item {
+      display: flex;
+      justify-content: space-between;
+      color: #204cc4;
+
+      &:not(:last-child) {
+        border-bottom: 0.5px solid rgba(102, 103, 104, 0.5);
+      }
+    }
+
+    .locked {
+      color: rgba(102, 103, 104, 0.4);
+    }
+  }
+  .datePicker {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    left: 0;
+    width: 100%;
+
+    .rdrDefinedRangesWrapper {
+      display: none;
+    }
+    .rdrDateRangePickerWrapper {
+      box-shadow: 0 2px 4px 1px rgba(198, 196, 196, 0.5);
+    }
+  }
+
+  .date-range-item {
+    transition: all 0.3s ease-in;
+    &:not(:last-child) {
+      border-bottom: 0.5px solid rgba(102, 103, 104, 0.5);
+    }
+
+    &:hover {
+      background-color: rgba(32, 76, 196, 0.1);
+    }
   }
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.content,
 .datePicker {
-  position: absolute;
-  top: 100%;
+  animation: fadeIn 0.5s ease-in-out forwards;
+  opacity: 0;
+  display: none;
+}
+
+.content.open,
+.datePicker.open {
+  display: block;
 }

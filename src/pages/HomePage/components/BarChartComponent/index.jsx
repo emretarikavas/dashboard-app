@@ -27,35 +27,43 @@ function index({ status }) {
 
   useEffect(() => {
     const startDate = dateRange[0].startDate;
-    const endDate = dateRange[0].endDate;
-    const diffDays = Math.ceil((endDate - startDate) / (1000 * 60 * 60 * 24));
+    let endDate = new Date(dateRange[0].endDate);
+    endDate.setHours(23, 59, 59, 999);
+    const diffDays =
+      Math.ceil(
+        (endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24)
+      ) + 1;
 
     let groupedData = {};
 
+    const daysOfWeek = [
+      "Pazartesi",
+      "Salı",
+      "Çarşamba",
+      "Perşembe",
+      "Cuma",
+      "Cumartesi",
+      "Pazar"
+    ];
+
     if (diffDays <= 7) {
-      const daysOfWeek = [
-        "Pazartesi",
-        "Salı",
-        "Çarşamba",
-        "Perşembe",
-        "Cuma",
-        "Cumartesi",
-        "Pazar"
-      ];
       groupedData = daysOfWeek.reduce(
         (acc, day) => ({ ...acc, [day]: { amount: 0, count: 0 } }),
         {}
       );
 
       billingData.forEach((item) => {
-        const date = new Date(item.date);
+        let date = new Date(item.date);
+        date = new Date(date.getTime() + 3 * 60 * 60 * 1000); // Türkiye'nin saat dilimine göre ayarla
         if (
           date >= startDate &&
           date <= endDate &&
           item.department === department &&
           item.status === status
         ) {
-          const dayOfWeek = daysOfWeek[date.getDay()];
+          let dayOfWeekIndex = date.getDay() - 1;
+          if (dayOfWeekIndex < 0) dayOfWeekIndex = 6; // Eğer getDay 0 (Pazar) döndürürse, dayOfWeekIndex'i 6 yap
+          const dayOfWeek = daysOfWeek[dayOfWeekIndex];
           groupedData[dayOfWeek].amount += item.amount;
           groupedData[dayOfWeek].count += 1;
         }
