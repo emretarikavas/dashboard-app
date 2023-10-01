@@ -8,19 +8,18 @@ import { UserContext } from "src/context/UserContext";
 import "./totalBox.scss";
 
 const TotalBox = ({ status, expenseStatus }) => {
-  const { department } = useContext(UserContext);
+  const { department, dateRange, calculateTotalAmount, isCountInDateRange } =
+    useContext(UserContext);
 
   const filteredData = billingData.filter(
     (item) =>
       (department === "Müdür" || item.department === department) &&
       item.status === status &&
+      isCountInDateRange(item, status) &&
       (expenseStatus ? item.expense_status === expenseStatus : true)
   );
 
-  const totalAmount = filteredData.reduce(
-    (total, item) => total + item.amount,
-    0
-  );
+  const totalAmount = calculateTotalAmount(filteredData, status);
   const totalCount = filteredData.length;
 
   let title, Icon;
@@ -42,7 +41,7 @@ const TotalBox = ({ status, expenseStatus }) => {
         <Icon />
       </div>
       <div className="totalBoxContent">
-        <h5>{numberFormat(totalAmount)} ₺</h5>
+        <h5>{numberFormat(totalAmount)}</h5>
         <h6>{totalCount} Adet</h6>
       </div>
     </div>

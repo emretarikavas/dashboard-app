@@ -6,6 +6,7 @@ import "./DropdownBox.scss";
 import CalendarIcon from "src/components/Icons/CalendarIcon";
 import { DateRangePicker } from "react-date-range";
 import { tr } from "react-date-range/dist/locale";
+import DownIcon from "src/components/Icons/DownIcon";
 
 const index = ({ title, initialContent }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,14 +48,30 @@ const index = ({ title, initialContent }) => {
   };
 
   const renderDateRanges = () => {
-    const dateRanges = ["Son 7 Gün", "Son 30 Gün", "Son 1 Yıl"];
+    const dateRanges = [
+      { label: "Son 7 Gün", days: 7 },
+      { label: "Son 30 Gün", days: 30 },
+      { label: "Son 1 Yıl", days: 365 }
+    ];
+
     return dateRanges.map((range, index) => (
       <li
         key={index}
         className="date-range-item"
-        onClick={() => handleSelect(range)}
+        onClick={() => {
+          const endDate = new Date();
+          const startDate = new Date();
+          startDate.setDate(endDate.getDate() - range.days);
+          handleSelect({
+            selection: {
+              startDate,
+              endDate,
+              key: "selection"
+            }
+          });
+        }}
       >
-        {range}
+        {range.label}
       </li>
     ));
   };
@@ -65,7 +82,8 @@ const index = ({ title, initialContent }) => {
         <h3>{title}</h3>
         <h5>{initialContent}</h5>
       </div>
-      <CalendarIcon />
+
+      {title === "Tarih Aralığı" ? <CalendarIcon /> : <DownIcon />}
       {isOpen && (
         <ul className="content">
           <li>

@@ -4,6 +4,22 @@ import CustomizeAxisTicks from "../CustomizeAxisTicks";
 import "./barChartComponent.scss";
 import { billingData } from "src/data";
 import { UserContext } from "src/context/UserContext";
+import { numberFormat } from "src/utils/format";
+
+function CustomTooltip({ payload, label, active }) {
+  if (active && payload && payload.length) {
+    const fill = payload[0].fill;
+    return (
+      <div className="custom-tooltip" style={{ color: fill }}>
+        <p className="label">{`Tarih: ${label}`}</p>
+        <p className="intro">{`Fiyat: ${numberFormat(payload[0].value)}`}</p>
+        <p className="desc">{`Toplam fatura sayısı: ${payload[0].payload.count}`}</p>
+      </div>
+    );
+  }
+
+  return null;
+}
 
 function index({ status }) {
   const { dateRange, department } = useContext(UserContext);
@@ -26,7 +42,10 @@ function index({ status }) {
         "Cumartesi",
         "Pazar"
       ];
-      groupedData = daysOfWeek.reduce((acc, day) => ({ ...acc, [day]: 0 }), {});
+      groupedData = daysOfWeek.reduce(
+        (acc, day) => ({ ...acc, [day]: { amount: 0, count: 0 } }),
+        {}
+      );
 
       billingData.forEach((item) => {
         const date = new Date(item.date);
@@ -37,15 +56,16 @@ function index({ status }) {
           item.status === status
         ) {
           const dayOfWeek = daysOfWeek[date.getDay()];
-          groupedData[dayOfWeek] += item.amount;
+          groupedData[dayOfWeek].amount += item.amount;
+          groupedData[dayOfWeek].count += 1;
         }
       });
     } else if (diffDays <= 30) {
       groupedData = {
-        "1. Hafta": 0,
-        "2. Hafta": 0,
-        "3. Hafta": 0,
-        "4. Hafta": 0
+        "1. Hafta": { amount: 0, count: 0 },
+        "2. Hafta": { amount: 0, count: 0 },
+        "3. Hafta": { amount: 0, count: 0 },
+        "4. Hafta": { amount: 0, count: 0 }
       };
 
       billingData.forEach((item) => {
@@ -57,7 +77,8 @@ function index({ status }) {
           item.status === status
         ) {
           const weekOfMonth = Math.ceil(date.getDate() / 7);
-          groupedData[`${weekOfMonth}. Hafta`] += item.amount;
+          groupedData[`${weekOfMonth}. Hafta`].amount += item.amount;
+          groupedData[`${weekOfMonth}. Hafta`].count += 1;
         }
       });
     } else {
@@ -76,7 +97,7 @@ function index({ status }) {
         "Aralık"
       ];
       groupedData = monthsOfYear.reduce(
-        (acc, month) => ({ ...acc, [month]: 0 }),
+        (acc, month) => ({ ...acc, [month]: { amount: 0, count: 0 } }),
         {}
       );
 
@@ -89,15 +110,19 @@ function index({ status }) {
           item.status === status
         ) {
           const monthOfYear = monthsOfYear[date.getMonth()];
-          groupedData[monthOfYear] += item.amount;
+          groupedData[monthOfYear].amount += item.amount;
+          groupedData[monthOfYear].count += 1;
         }
       });
     }
 
-    const dataArray = Object.entries(groupedData).map(([date, amount]) => ({
-      date,
-      amount
-    }));
+    const dataArray = Object.entries(groupedData).map(
+      ([date, { amount, count }]) => ({
+        date,
+        amount,
+        count
+      })
+    );
     setData(dataArray);
   }, [dateRange, department, status]);
 
@@ -109,10 +134,11 @@ function index({ status }) {
       <ResponsiveContainer width="100%" height={300}>
         <BarChart data={data}>
           <XAxis dataKey="date" interval={0} tick={<CustomizeAxisTicks />} />
-          <Tooltip formatter={(value) => [`Fiyat: ${value} ₺`]} />
+
+          <Tooltip content={<CustomTooltip />} />
           <Bar
             dataKey="amount"
-            fill={status === "Gelir" ? "#ff8042" : "#8884d8"}
+            fill={status === "Gelir" ? "#6CD894" : "#EE575D"}
           />
         </BarChart>
       </ResponsiveContainer>

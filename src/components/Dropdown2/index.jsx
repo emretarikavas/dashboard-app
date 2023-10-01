@@ -1,4 +1,4 @@
-import "./dropdown2.scss";
+/* import "./dropdown2.scss";
 import { useState, useContext } from "react";
 import { DateRangePicker } from "react-date-range";
 import { tr } from "react-date-range/dist/locale";
@@ -59,3 +59,4 @@ export default function index() {
     </div>
   );
 }
+ */

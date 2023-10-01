@@ -1,7 +1,7 @@
 export const numberFormat = (value) => {
-  return Intl.NumberFormat("tr", {
-    notation: "compact",
-    maximumFractionDigits: 2
+  return new Intl.NumberFormat("tr-TR", {
+    style: "currency",
+    currency: "TRY"
   }).format(value);
 };
 

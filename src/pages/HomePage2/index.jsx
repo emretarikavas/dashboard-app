@@ -1,8 +1,19 @@
 import "./homePage2.scss";
+import { UserContext } from "src/context/UserContext";
+import { useContext } from "react";
 import BarChartComponent from "src/pages/HomePage/components/BarChartComponent";
 import DropdownBox from "./components/DropdownBox";
 import TotalBox from "./components/TotalBox";
 const index = () => {
+  const { dateRange } = useContext(UserContext);
+  const startDate = dateRange[0].startDate.toLocaleDateString("tr-TR", {
+    day: "2-digit",
+    month: "long"
+  });
+  const endDate = dateRange[0].endDate.toLocaleDateString("tr-TR", {
+    day: "2-digit",
+    month: "long"
+  });
   return (
     <header className="homePage">
       <div className="header">
@@ -16,7 +27,7 @@ const index = () => {
         ></DropdownBox>
         <DropdownBox
           title="Tarih Aralığı"
-          initialContent="Tarih Aralığı Seç"
+          initialContent={`${startDate} - ${endDate}`}
         ></DropdownBox>
       </div>
 
