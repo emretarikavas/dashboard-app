@@ -6,12 +6,18 @@ const index = () => {
   return (
     <header className="homePage">
       <div className="header">
-        <DropdownBox>
-          {{ title: "Departman", content: "Departman Seç" }}
-        </DropdownBox>
-        <DropdownBox>
-          {{ title: "Dönem", content: "Tarih Aralığı Seç" }}
-        </DropdownBox>
+        <DropdownBox
+          title="Departman"
+          initialContent="Departman Seç"
+        ></DropdownBox>
+        <DropdownBox
+          title="Dönem"
+          initialContent="Tarih Aralığı Seç"
+        ></DropdownBox>
+        <DropdownBox
+          title="Tarih Aralığı"
+          initialContent="Tarih Aralığı Seç"
+        ></DropdownBox>
       </div>
 
       <main className="main">
