@@ -38,7 +38,7 @@
     top: calc(100% + 0.5rem);
     left: 0;
     box-shadow: 0 2px 4px 1px rgba(198, 196, 196, 0.5);
-
+    z-index: 1;
     li {
       width: 100%;
       padding: 9px 12px;

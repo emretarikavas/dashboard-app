@@ -1,17 +1,17 @@
 .input {
-  font-size: 18px;
-  color: #d3d3d3;
-  background-color: #161618;
-  border-radius: 5px;
+  font-size: 16px;
+  color: #3f3f3f;
+  background-color: #ffffff;
+  border-radius: 6px;
   height: 45px;
-  caret-color: #d3d3d3;
+  caret-color: #3f3f3f;
 
   &:-webkit-autofill,
   &:-webkit-autofill:hover,
   &:-webkit-autofill:focus,
   &:-webkit-autofill:active {
     -webkit-background-clip: text;
-    -webkit-text-fill-color: #d3d3d3;
+    -webkit-text-fill-color: #3f3f3f;
   }
 }
 

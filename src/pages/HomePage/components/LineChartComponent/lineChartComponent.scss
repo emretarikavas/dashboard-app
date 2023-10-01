@@ -4,3 +4,9 @@
 .expense {
   color: #ee575d;
 }
+
+@media (max-width: 768px) {
+  .chartContainer {
+    height: 400px;
+  }
+}
