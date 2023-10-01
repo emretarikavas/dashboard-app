@@ -5,13 +5,15 @@ import cn from "classnames";
 import "./DropdownBox.scss";
 import CalendarIcon from "src/components/Icons/CalendarIcon";
 import { DateRangePicker } from "react-date-range";
+
+import "react-date-range/dist/styles.css";
+import "react-date-range/dist/theme/default.css";
 import { tr } from "react-date-range/dist/locale";
 import DownIcon from "src/components/Icons/DownIcon";
 
 const index = ({ title, initialContent }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [content, setContent] = useState(initialContent);
-
   const { userRole, department, dateRange, setDateRange } =
     useContext(UserContext);
 
@@ -84,29 +86,31 @@ const index = ({ title, initialContent }) => {
       </div>
 
       {title === "Tarih Aralığı" ? <CalendarIcon /> : <DownIcon />}
-      {isOpen && (
+      {isOpen && title !== "Tarih Aralığı" && (
         <ul className="content">
           <li>
             {title === "Departman"
               ? renderDepartments()
               : title === "Dönem"
               ? renderDateRanges()
-              : title === "Tarih Aralığı" && (
-                  <DateRangePicker
-                    showSelectionPreview={true}
-                    moveRangeOnFirstSelection={false}
-                    months={1}
-                    ranges={dateRange}
-                    onChange={handleSelect}
-                    direction="horizontal"
-                    minDate={new Date("2020-01-01")}
-                    maxDate={new Date()}
-                    locale={tr}
-                    rangeColors={"red"}
-                  />
-                )}
+              : null}
           </li>
         </ul>
+      )}
+      {title === "Tarih Aralığı" && isOpen && (
+        <div className="datePicker">
+          <DateRangePicker
+            showSelectionPreview={true}
+            moveRangeOnFirstSelection={false}
+            months={1}
+            ranges={dateRange}
+            onChange={handleSelect}
+            direction="horizontal"
+            minDate={new Date("2020-01-01")}
+            maxDate={new Date()}
+            locale={tr}
+          />
+        </div>
       )}
     </div>
   );
