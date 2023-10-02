@@ -13,7 +13,8 @@ const LoginBox = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
-  const { userId, setUserId, setDepartment } = useContext(UserContext);
+  const { userId, setUserId, setDepartment, setUserRole } =
+    useContext(UserContext);
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -23,6 +24,7 @@ const LoginBox = () => {
     if (user) {
       setUserId(user.id);
       setDepartment(user.department);
+      setUserRole(user.role);
       navigate("/");
     } else {
       console.log("HATA");

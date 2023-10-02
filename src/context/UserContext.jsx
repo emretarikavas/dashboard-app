@@ -6,6 +6,8 @@ export const UserProvider = ({ children }) => {
   const [department, setDepartment] = useState(null);
   const [userId, setUserId] = useState(null);
 
+  const [userRole, setUserRole] = useState(null);
+
   const today = new Date();
   const month = today.getMonth();
   const year = today.getFullYear();
@@ -54,6 +56,8 @@ export const UserProvider = ({ children }) => {
         userId,
         setUserId,
         department,
+        userRole,
+        setUserRole,
         setDepartment,
         dateRange,
         setDateRange,

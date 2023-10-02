@@ -17,7 +17,8 @@ const index = ({ title, initialContent }) => {
   const [content, setContent] = useState(initialContent);
   const [date, setDate] = useState(null);
 
-  const { department, dateRange, setDateRange } = useContext(UserContext);
+  const { department, dateRange, setDateRange, userRole } =
+    useContext(UserContext);
 
   useEffect(() => {
     const closeDropdown = (e) => {
@@ -45,11 +46,11 @@ const index = ({ title, initialContent }) => {
       <li
         key={index}
         className={cn("department-item", {
-          locked: department !== "Yönetici" && department !== dep
+          locked: userRole !== "Yönetici" && department !== dep
         })}
       >
         {dep}
-        {department !== "Yönetici" && department !== dep && <FaLock />}
+        {userRole !== "Yönetici" && department !== dep && <FaLock />}
       </li>
     ));
   };
