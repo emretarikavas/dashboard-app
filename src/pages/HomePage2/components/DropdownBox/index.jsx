@@ -1,6 +1,6 @@
 import { useState, useEffect, useContext } from "react";
 import { UserContext } from "src/context/UserContext";
-import usersData from "src/data/usersData.json";
+import { usersData, billingData } from "src/data/index";
 import cn from "classnames";
 import "./DropdownBox.scss";
 import CalendarIcon from "src/components/Icons/CalendarIcon";
@@ -17,8 +17,7 @@ const index = ({ title, initialContent }) => {
   const [content, setContent] = useState(initialContent);
   const [date, setDate] = useState(null);
 
-  const { userRole, department, dateRange, setDateRange } =
-    useContext(UserContext);
+  const { department, dateRange, setDateRange } = useContext(UserContext);
 
   useEffect(() => {
     const closeDropdown = (e) => {
@@ -39,16 +38,18 @@ const index = ({ title, initialContent }) => {
   };
 
   const renderDepartments = () => {
-    const departments = [...new Set(usersData.map((user) => user.department))];
+    const departments = [
+      ...new Set(billingData.map((bill) => bill.department))
+    ];
     return departments.map((dep, index) => (
       <li
         key={index}
         className={cn("department-item", {
-          locked: userRole !== "Müdür" && department !== dep
+          locked: department !== "Yönetici" && department !== dep
         })}
       >
         {dep}
-        {userRole !== "Müdür" && department !== dep && <FaLock />}
+        {department !== "Yönetici" && department !== dep && <FaLock />}
       </li>
     ));
   };

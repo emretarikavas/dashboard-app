@@ -22,7 +22,7 @@ const LoginBox = () => {
     );
     if (user) {
       setUserId(user.id);
-      setDepartment(user.department); // Kullanıcının department'ini set edin
+      setDepartment(user.department);
       navigate("/");
     } else {
       console.log("HATA");
