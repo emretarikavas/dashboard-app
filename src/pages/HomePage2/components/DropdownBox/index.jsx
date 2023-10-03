@@ -17,7 +17,7 @@ const index = ({ title, initialContent }) => {
   const [content, setContent] = useState(initialContent);
   const [date, setDate] = useState(null);
 
-  const { department, dateRange, setDateRange, userRole } =
+  const { department, setDepartment, dateRange, setDateRange, userRole } =
     useContext(UserContext);
 
   useEffect(() => {
@@ -48,13 +48,15 @@ const index = ({ title, initialContent }) => {
         className={cn("department-item", {
           locked: userRole !== "Yönetici" && department !== dep
         })}
+        onClick={() => {
+          setDepartment(dep);
+        }}
       >
         {dep}
         {userRole !== "Yönetici" && department !== dep && <FaLock />}
       </li>
     ));
   };
-
   const handleSelect = (ranges) => {
     if (ranges.selection) {
       setDateRange([ranges.selection]);

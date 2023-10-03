@@ -134,18 +134,8 @@ function LineChartComponent() {
             angle={-20}
           />
           <Tooltip content={<CustomTooltip />} />
-          <Line
-            type="monotone"
-            dataKey="Gelir"
-            stroke="#6cd894"
-            dot={<circle r={5} />}
-          />
-          <Line
-            type="monotone"
-            dataKey="Gider"
-            stroke="#ee575d"
-            dot={<circle r={5} />}
-          />
+          <Line type="monotone" dataKey="Gelir" stroke="#6cd894" />
+          <Line type="monotone" dataKey="Gider" stroke="#ee575d" />
         </LineChart>
       </ResponsiveContainer>
     </div>
