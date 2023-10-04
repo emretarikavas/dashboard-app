@@ -6,7 +6,7 @@ import DropdownBox from "./components/DropdownBox";
 import TotalBox from "./components/TotalBox";
 import LineChartComponent from "../HomePage/components/LineChartComponent";
 const index = () => {
-  const { dateRange } = useContext(UserContext);
+  const { dateRange, department } = useContext(UserContext);
   const startDate = dateRange[0].startDate.toLocaleDateString("tr-TR", {
     day: "2-digit",
     month: "long"
@@ -20,7 +20,7 @@ const index = () => {
       <div className="header">
         <DropdownBox
           title="Departman"
-          initialContent="Departman Seç"
+          initialContent={department || "Departman Seç"}
         ></DropdownBox>
         <DropdownBox
           title="Dönem"

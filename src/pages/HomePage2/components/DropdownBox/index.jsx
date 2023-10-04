@@ -48,6 +48,11 @@ const index = ({ title, initialContent }) => {
         className={cn("department-item", {
           locked: userRole === "Çalışan" && department !== dep
         })}
+        onClick={() => {
+          if (userRole !== "Çalışan" || department === dep) {
+            setDepartment(dep);
+          }
+        }}
       >
         {dep}
         {userRole === "Çalışan" && department !== dep && <FaLock />}
