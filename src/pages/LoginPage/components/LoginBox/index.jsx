@@ -24,7 +24,7 @@ const LoginBox = () => {
     if (user) {
       setUserId(user.id);
       setDepartment(user.department);
-      setUserRole(user.role);
+      setUserRole(user.user_role);
       navigate("/");
     } else {
       console.log("HATA");

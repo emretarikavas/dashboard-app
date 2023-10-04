@@ -46,14 +46,11 @@ const index = ({ title, initialContent }) => {
       <li
         key={index}
         className={cn("department-item", {
-          locked: userRole !== "Yönetici" && department !== dep
+          locked: userRole === "Çalışan" && department !== dep
         })}
-        onClick={() => {
-          setDepartment(dep);
-        }}
       >
         {dep}
-        {userRole !== "Yönetici" && department !== dep && <FaLock />}
+        {userRole === "Çalışan" && department !== dep && <FaLock />}
       </li>
     ));
   };
