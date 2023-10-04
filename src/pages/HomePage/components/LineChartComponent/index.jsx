@@ -16,6 +16,7 @@ function CustomTooltip({ payload, label, active }) {
       </div>
     );
   }
+  return null;
 }
 
 function LineChartComponent() {
@@ -23,42 +24,46 @@ function LineChartComponent() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    const startDate = dateRange[0].startDate;
+    const startDate = new Date(dateRange[0].startDate);
+    startDate.setHours(0, 0, 0, 0);
     let endDate = new Date(dateRange[0].endDate);
     endDate.setHours(23, 59, 59, 999);
     const diffDays =
       Math.ceil(
         (endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24)
       ) + 1;
-
     let groupedData = {};
 
+    const daysOfWeek = [
+      "Pazartesi",
+      "Salı",
+      "Çarşamba",
+      "Perşembe",
+      "Cuma",
+      "Cumartesi",
+      "Pazar"
+    ];
+
+    const monthsOfYear = [
+      "Ocak",
+      "Şubat",
+      "Mart",
+      "Nisan",
+      "Mayıs",
+      "Haziran",
+      "Temmuz",
+      "Ağustos",
+      "Eylül",
+      "Ekim",
+      "Kasım",
+      "Aralık"
+    ];
+
     if (diffDays <= 7) {
-      const daysOfWeek = [
-        "Pazartesi",
-        "Salı",
-        "Çarşamba",
-        "Perşembe",
-        "Cuma",
-        "Cumartesi",
-        "Pazar"
-      ];
       groupedData = daysOfWeek.reduce(
         (acc, day) => ({ ...acc, [day]: { Gelir: 0, Gider: 0 } }),
         {}
       );
-
-      billingData.forEach((item) => {
-        const date = new Date(item.date);
-        if (
-          date >= startDate &&
-          date <= endDate &&
-          item.department === department
-        ) {
-          const dayOfWeek = daysOfWeek[date.getDay()];
-          groupedData[dayOfWeek][item.status] += item.amount;
-        }
-      });
     } else if (diffDays <= 30) {
       groupedData = {
         "1. Hafta": { Gelir: 0, Gider: 0 },
@@ -66,50 +71,48 @@ function LineChartComponent() {
         "3. Hafta": { Gelir: 0, Gider: 0 },
         "4. Hafta": { Gelir: 0, Gider: 0 }
       };
-
-      billingData.forEach((item) => {
-        const date = new Date(item.date);
-        if (
-          date >= startDate &&
-          date <= endDate &&
-          item.department === department
-        ) {
-          const weekOfMonth = Math.ceil(date.getDate() / 7);
-          groupedData[`${weekOfMonth}. Hafta`][item.status] += item.amount;
-        }
-      });
     } else {
-      const monthsOfYear = [
-        "Ocak",
-        "Şubat",
-        "Mart",
-        "Nisan",
-        "Mayıs",
-        "Haziran",
-        "Temmuz",
-        "Ağustos",
-        "Eylül",
-        "Ekim",
-        "Kasım",
-        "Aralık"
-      ];
       groupedData = monthsOfYear.reduce(
         (acc, month) => ({ ...acc, [month]: { Gelir: 0, Gider: 0 } }),
         {}
       );
+    }
 
-      billingData.forEach((item) => {
-        const date = new Date(item.date);
-        if (
-          date >= startDate &&
-          date <= endDate &&
-          item.department === department
-        ) {
+    billingData.forEach((item) => {
+      const date = new Date(item.date);
+      date.setHours(0, 0, 0, 0);
+      if (
+        date >= startDate &&
+        date <= endDate &&
+        item.department === department
+      ) {
+        if (diffDays <= 7) {
+          const dayOfWeek = daysOfWeek[date.getDay()];
+          groupedData[dayOfWeek] = {
+            Gelir: 0,
+            Gider: 0,
+            ...groupedData[dayOfWeek]
+          };
+          groupedData[dayOfWeek][item.status] += item.amount;
+        } else if (diffDays <= 30) {
+          const weekOfMonth = Math.ceil(date.getDate() / 7);
+          groupedData[`${weekOfMonth}. Hafta`] = {
+            Gelir: 0,
+            Gider: 0,
+            ...groupedData[`${weekOfMonth}. Hafta`]
+          };
+          groupedData[`${weekOfMonth}. Hafta`][item.status] += item.amount;
+        } else {
           const monthOfYear = monthsOfYear[date.getMonth()];
+          groupedData[monthOfYear] = {
+            Gelir: 0,
+            Gider: 0,
+            ...groupedData[monthOfYear]
+          };
           groupedData[monthOfYear][item.status] += item.amount;
         }
-      });
-    }
+      }
+    });
 
     const dataArray = Object.entries(groupedData).map(([date, amount]) => ({
       date,

@@ -7,11 +7,12 @@ import LogoutButton from "src/components/LogoutButton";
 
 function Logout() {
   const navigate = useNavigate();
-  const { setDepartment, setUserId } = useContext(UserContext);
+  const { setDepartment, setUserId, setUserRole } = useContext(UserContext);
 
   function handleLogout() {
     setUserId(null);
     setDepartment(null);
+    setUserRole(null);
     navigate("/login");
   }
   return <LogoutButton onClick={handleLogout} />;

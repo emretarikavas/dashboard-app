@@ -35,7 +35,13 @@ const index = ({ title, initialContent }) => {
   }, []);
 
   const toggleDropdown = () => {
-    setIsOpen(!isOpen);
+    if (isOpen) {
+      const dropdownContent = document.querySelector(".dropdown .content");
+      dropdownContent.style.animation = "fadeOut 0.5s ease-in-out forwards";
+      setTimeout(() => setIsOpen(false), 500); // 500ms is the duration of the animation
+    } else {
+      setIsOpen(true);
+    }
   };
 
   const renderDepartments = () => {

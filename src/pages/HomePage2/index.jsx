@@ -1,4 +1,4 @@
-import "./homePage2.scss";
+import "./HomePage2.scss";
 import { UserContext } from "src/context/UserContext";
 import { useContext } from "react";
 import BarChartComponent from "src/pages/HomePage/components/BarChartComponent";

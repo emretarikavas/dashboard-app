@@ -1,6 +1,7 @@
 .dropdown {
   background: #ffffff;
   border-radius: 6px;
+  transition: opacity 0.5s ease-in-out;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -89,17 +90,6 @@
   }
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 .content,
 .datePicker {
   animation: fadeIn 0.5s ease-in-out forwards;
@@ -110,4 +100,25 @@
 .content.open,
 .datePicker.open {
   display: block;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
 }

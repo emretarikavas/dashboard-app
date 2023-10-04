@@ -64,6 +64,10 @@ function index({ status }) {
           let dayOfWeekIndex = date.getDay() - 1;
           if (dayOfWeekIndex < 0) dayOfWeekIndex = 6; // Eğer getDay 0 (Pazar) döndürürse, dayOfWeekIndex'i 6 yap
           const dayOfWeek = daysOfWeek[dayOfWeekIndex];
+          groupedData[dayOfWeek] = groupedData[dayOfWeek] || {
+            amount: 0,
+            count: 0
+          };
           groupedData[dayOfWeek].amount += item.amount;
           groupedData[dayOfWeek].count += 1;
         }
@@ -85,6 +89,9 @@ function index({ status }) {
           item.status === status
         ) {
           const weekOfMonth = Math.ceil(date.getDate() / 7);
+          groupedData[`${weekOfMonth}. Hafta`] = groupedData[
+            `${weekOfMonth}. Hafta`
+          ] || { amount: 0, count: 0 };
           groupedData[`${weekOfMonth}. Hafta`].amount += item.amount;
           groupedData[`${weekOfMonth}. Hafta`].count += 1;
         }
@@ -118,6 +125,10 @@ function index({ status }) {
           item.status === status
         ) {
           const monthOfYear = monthsOfYear[date.getMonth()];
+          groupedData[monthOfYear] = groupedData[monthOfYear] || {
+            amount: 0,
+            count: 0
+          };
           groupedData[monthOfYear].amount += item.amount;
           groupedData[monthOfYear].count += 1;
         }
@@ -125,11 +136,7 @@ function index({ status }) {
     }
 
     const dataArray = Object.entries(groupedData).map(
-      ([date, { amount, count }]) => ({
-        date,
-        amount,
-        count
-      })
+      ([date, { amount, count }]) => ({ date, amount, count })
     );
     setData(dataArray);
   }, [dateRange, department, status]);
@@ -142,7 +149,6 @@ function index({ status }) {
       <ResponsiveContainer width="100%" height={300}>
         <BarChart data={data}>
           <XAxis dataKey="date" interval={0} tick={<CustomizeAxisTicks />} />
-
           <Tooltip content={<CustomTooltip />} />
           <Bar
             dataKey="amount"

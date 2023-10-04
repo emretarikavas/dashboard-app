@@ -3,9 +3,12 @@
   padding: 36px;
 
   .header {
-    display: flex;
+    /* display: flex;
     gap: 24px;
-    align-items: center;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
     margin-bottom: 36px;
   }
 

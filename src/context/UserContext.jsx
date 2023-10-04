@@ -19,13 +19,18 @@ export const UserProvider = ({ children }) => {
       key: "selection"
     }
   ]);
-
   const calculateTotalAmount = (bills, status) => {
+    if (!bills || bills.length === 0) {
+      return 0;
+    }
+
     let endDate = new Date(dateRange[0].endDate);
     endDate.setHours(23, 59, 59, 999);
 
     return bills.reduce((total, bill) => {
       if (
+        bill &&
+        typeof bill.amount === "number" &&
         bill.status === status &&
         bill.department === department &&
         new Date(bill.date) >= dateRange[0].startDate &&
@@ -39,6 +44,10 @@ export const UserProvider = ({ children }) => {
   };
 
   const isCountInDateRange = (bill, status) => {
+    if (!bill || typeof bill.amount !== "number") {
+      return false;
+    }
+
     let endDate = new Date(dateRange[0].endDate);
     endDate.setHours(23, 59, 59, 999);
 
