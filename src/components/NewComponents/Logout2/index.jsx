@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { UserContext } from "src/context/UserContext";
 import NavButton from "../../NavButton";
+import LogoutButton from "src/components/LogoutButton";
 
 function Logout() {
   const navigate = useNavigate();
@@ -13,11 +14,7 @@ function Logout() {
     setDepartment(null);
     navigate("/login");
   }
-  return (
-    <h3 className="logout" onClick={handleLogout}>
-      Çıkış Yap
-    </h3>
-  );
+  return <LogoutButton onClick={handleLogout} />;
 }
 
 export default Logout;

@@ -48,6 +48,10 @@
       display: flex;
       justify-content: space-between;
       color: #204cc4;
+      transition: all 0.3s ease;
+      &:hover {
+        background-color: rgba(32, 76, 196, 0.1);
+      }
 
       &:not(:last-child) {
         border-bottom: 0.5px solid rgba(102, 103, 104, 0.5);
