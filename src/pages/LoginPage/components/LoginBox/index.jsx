@@ -1,13 +1,13 @@
-import Button from "../../../../components/Button";
-import Input from "../../../../components/Input";
+import Button from "src/components/Button";
+import Input from "src/components/Input";
 import "./loginBox.scss";
-import { FaUser } from "react-icons/fa";
 import { RiLockPasswordFill } from "react-icons/ri";
 import { useState, useEffect, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { usersData } from "src/data/index";
 import dashboardImg from "src/assets/engineering_team.svg";
 import { UserContext } from "src/context/UserContext";
+import UserIcon from "src/components/Icons/UserIcon";
 
 const LoginBox = () => {
   const [email, setEmail] = useState("");
@@ -49,7 +49,7 @@ const LoginBox = () => {
         </div>
       </div>
       <div className="input-container">
-        <FaUser />
+        <UserIcon />
         <Input
           placeholder="E-Posta"
           type="email"

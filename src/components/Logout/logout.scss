@@ -1,14 +1,6 @@
-.sign {
-  width: 100%;
-  transition-duration: 0.3s;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  svg {
-    width: 18px;
-  }
-  path {
-    fill: $text-white;
-  }
+.logout {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 24px;
+  cursor: pointer;
 }

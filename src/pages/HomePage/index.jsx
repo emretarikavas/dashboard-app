@@ -1,43 +1,50 @@
-import "./homepage.scss";
-import TotalIncomeCount from "./components/TotalIncomeCount";
-import TotalExpenseCount from "./components/TotalExpenseCount";
-import TotalExpenseAmount from "./components/TotalExpenseAmount";
-import TotalIncomeAmount from "./components/TotalIncomeAmount";
-import PendingList from "./components/PendingList";
-import IncomeList from "./components/IncomeList";
+import "./HomePage.scss";
+import { UserContext } from "src/context/UserContext";
+import { useContext } from "react";
 import BarChartComponent from "./components/BarChartComponent";
+import DropdownBox from "./components/DropdownBox";
+import TotalBox from "./components/TotalBox";
 import LineChartComponent from "./components/LineChartComponent";
 const index = () => {
+  const { dateRange, department } = useContext(UserContext);
+  const startDate = dateRange[0].startDate.toLocaleDateString("tr-TR", {
+    day: "2-digit",
+    month: "long"
+  });
+  const endDate = dateRange[0].endDate.toLocaleDateString("tr-TR", {
+    day: "2-digit",
+    month: "long"
+  });
   return (
-    <div className="home">
-      <div className="box box1">
-        <PendingList />
+    <header className="homePage">
+      <div className="header">
+        <DropdownBox
+          title="Departman"
+          initialContent={department || "Departman Seç"}
+        ></DropdownBox>
+        <DropdownBox
+          title="Dönem"
+          initialContent="Tarih Aralığı Seç"
+        ></DropdownBox>
+        <DropdownBox
+          title="Tarih Aralığı"
+          initialContent={`${startDate} - ${endDate}`}
+        ></DropdownBox>
       </div>
-      <div className="box box2">
-        <TotalIncomeCount />
-      </div>
-      <div className="box box3">
-        <TotalIncomeAmount />
-      </div>
-      <div className="box box4">
-        <IncomeList />
-      </div>
-      <div className="box box5">
-        <TotalExpenseCount />
-      </div>
-      <div className="box box6">
-        <TotalExpenseAmount />
-      </div>
-      <div className="box box7">
+
+      <main className="main">
+        <TotalBox status="Gelir" />
+        <TotalBox status="Gider" expenseStatus="Ödenmedi" />
+        <TotalBox status="Gider" expenseStatus="Ödendi" />
+      </main>
+      <section className="lineChartContainer">
         <LineChartComponent />
-      </div>
-      <div className="box box8">
-        <BarChartComponent status="Gider" />
-      </div>
-      <div className="box box9">
+      </section>
+      <section className="barChartsContainers">
         <BarChartComponent status="Gelir" />
-      </div>
-    </div>
+        <BarChartComponent status="Gider" />
+      </section>
+    </header>
   );
 };
 

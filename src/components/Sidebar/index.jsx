@@ -1,29 +1,28 @@
 import "./sidebar.scss";
 import { NavLink } from "react-router-dom";
-import { HiOutlineHome, HiHome, HiUsers, HiOutlineUsers } from "react-icons/hi";
-import { IoReceiptOutline, IoReceiptSharp } from "react-icons/io5";
 import { useState } from "react";
+import cn from "classnames";
+import HomeIcon from "src/components/Icons/HomeIcon";
+import BillIcon from "src/components/Icons/BillIcon";
+import UserIcon from "src/components/Icons/UserIcon";
 
 const sideBarData = [
   {
     id: 1,
     to: "/",
-    icon: <HiOutlineHome />,
-    iconActive: <HiHome />,
+    icon: <HomeIcon />,
     text: "Ana Sayfa"
   },
   {
     id: 2,
     to: "/billings",
-    icon: <IoReceiptOutline />,
-    iconActive: <IoReceiptSharp />,
+    icon: <BillIcon />,
     text: "Faturalar"
   },
   {
     id: 2,
     to: "/users",
-    icon: <HiOutlineUsers />,
-    iconActive: <HiUsers />,
+    icon: <UserIcon />,
     text: "Kullanıcılar"
   }
 ];
@@ -33,14 +32,18 @@ function index() {
 
   return (
     <aside className="sidebar">
-      {sideBarData.map((data) => (
-        <NavLink
-          className="sidebarItem"
-          to={data.to}
-          onClick={() => setActiveLink(data.to)}
-        >
-          {activeLink === data.to ? data.iconActive : data.icon}
-          <span>{data.text}</span>
+      {sideBarData.map((data, i) => (
+        <NavLink key={i} to={data.to} onClick={() => setActiveLink(data.to)}>
+          <div className="sidebarItemContainer">
+            <div
+              className={cn("sidebarItem", {
+                activeLink: activeLink === data.to
+              })}
+            >
+              {data.icon}
+              <span>{data.text}</span>
+            </div>
+          </div>
         </NavLink>
       ))}
     </aside>

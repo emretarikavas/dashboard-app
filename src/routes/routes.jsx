@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 
 import BillingsPage from "src/pages/BillingsPage";
-import HomePage2 from "src/pages/HomePage2";
+import HomePage from "src/pages/HomePage";
 import LoginPage from "src/pages/LoginPage";
 import UsersPage from "src/pages/UsersPage";
 import ProtectedRoute from "src/layouts/ProtectedRoute";
@@ -12,7 +12,7 @@ const routes = createBrowserRouter([
     element: <ProtectedRoute />,
     children: [
       {
-        element: <HomePage2 />,
+        element: <HomePage />,
         index: true
       },
       {
